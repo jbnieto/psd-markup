@@ -1,0 +1,13 @@
+.header {
+    font-size: 18px;
+    left: 0;
+    margin-left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 13;
+    &__container {
+        margin: 19px auto 0;
+        max-width: 1366px;
+        width: 100%;
+    }
+} 
