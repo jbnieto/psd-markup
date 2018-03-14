@@ -1,0 +1,213 @@
+.psd-footer {
+    background-color: $palette_4;
+    bottom: 0;
+    @include font-size(16px);
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 412px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    z-index: 10;
+    a {
+        color: $palette_1;
+        text-decoration: none;
+    }
+    &__container {
+        margin: 0 auto;
+        max-width: 1366px;
+        padding: 100px 40px 70px;
+        width: 100%;
+    }
+    &__heading {
+        @include font-size(22px);
+        font-weight: 700;
+        padding: 0 0 40px;
+        a {
+            @include imgSprite('presidio-footer');
+            display: inline-block;
+            text-indent: -10000px;
+        }
+    }
+    &__column {
+        float: left;
+        @include font-size(18px);
+        font-family: $font_3;
+        font-weight: lighter;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 25%;
+        li {
+            line-height: 18px;
+            padding: 8px 0;
+        }
+    }
+    &__singup {
+        display: inline-block;
+        font-family: $font_0;
+        padding: 0;
+        text-align: initial;
+        position: relative;
+        width: 25%;
+        &__container {
+            display: inline-block;
+            min-height: 150px;
+            position: relative;
+        }
+        &__heading {
+            color: $palette_1;
+            @include font-size(18px);
+            font-weight: 700;
+            line-height: 18px;
+            padding: 8px 0;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        &__label {
+            display: none;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        &__input-text {
+            $a: &;
+            background-color: transparent;
+            border: 1px solid $palette_1;
+            color: $palette_1;
+            font-family: $font_3;
+            @include font-size(18px);
+            font-style: italic;
+            font-weight: lighter;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            margin: 0;
+            padding: 5px;
+            width: calc(100% - 80px);
+            @include placeholder {
+                color: $palette_1;
+            }
+        }
+        &__button {
+            border: none;
+            background-color: $palette_1;
+            font-family: $font_1;
+            @include font-size(18px);
+            font-style: italic;
+            float: left;
+            font-style: italic;
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            max-width: 80px;
+            min-width: 80px;
+            width: 80px;
+        }
+        &__fb {
+            border: 1px solid $palette_1;
+            display: block;
+            height: 40px;
+            font-family: $font_3;
+            @include font-size(18px);
+            float: left;
+            font-weight: lighter;
+            line-height: 40px;
+            margin: 40px 0 0;
+            text-align: center;
+            @include transition(background-color .3s ease, color .3s ease);
+            width: 100%;
+            &:before {
+                background-color: $palette_1;
+                color: $palette_4;
+                font-family: $font_5;
+                content: $icon-facebook;
+                float: left;
+                font-size: 24px;
+                height: 38px;
+                text-align: center;
+                width: 40px;
+                @include transition(background-color .3s ease, color .3s ease);
+            }
+            &:hover{
+                background-color: $palette_1;
+                color: $palette_4;
+                &:before{
+                    background-color: $palette_4;
+                    color: $palette_1;
+                }
+            }
+        }
+    }
+    &__social {
+        float: right;
+        padding: 46px 0 0;
+        width: 25%;
+        >strong {
+            color: $palette_1;
+            display: block;
+            font-family: $font_0;
+            @include font-size(18px);
+            font-weight: 700;
+            line-height: 18px;
+            padding: 8px 0;
+        }
+        >a {
+            color: $palette_1;
+            border: 1px solid $palette_1;
+            float: left;
+            @include font-size(22px);
+            height: 40px;
+            line-height: 40px;
+            margin: 0 calc(10% - 24px);
+            text-align: center;
+            width: 40px;
+            @include transition(background-color .3s ease, color .3s ease);
+            span {
+                display: none;
+            }
+            &:before {
+                font-family: $font_5;
+            }
+            &:nth-of-type(1) {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: $palette_1;
+                color: $palette_4;
+            }
+        }
+        &--facebook:before {
+            content: $icon-facebook;
+        }
+        &--twitter:before {
+            content: $icon-twitter;
+        }
+        &--instagram:before {
+            content: $icon-instagram;
+        }
+        &--youtube:before {
+            content: $icon-youtube;
+        }
+        &--pinterest:before {
+            content: $icon-pinterest;
+        }
+        &--linkedin:before {
+            content: $icon-linkedin;
+        }
+    }
+    &__credits {
+        color: $palette_1;
+        display: inline-block;
+        font-family: $font_3;
+        font-weight: lighter;
+        font-size: 15px;
+        padding: 90px 0 0;
+        text-align: center;
+        width: 100%;
+    }
+}

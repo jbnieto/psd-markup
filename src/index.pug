@@ -2,9 +2,14 @@ extends _layouts/home
 
 block head_end
 	link(rel="stylesheet" href="/css/style.css") 
+	script(type="text/javascript" src="/libs/jquery.min.js")
 
 block content
-	include _partials/header
+	div(id="s4-workspace")
+		div(id="s4-bodyContainer")
+			include _partials/header
+			div(id="dummy_content")
+			include _partials/footer 
 
 block body_end
 	script(type="text/javascript" src="/js/script.js")

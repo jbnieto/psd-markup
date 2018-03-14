@@ -1,28 +1,31 @@
-header(class="header")
-  div(class="header__container")
-    a(class="header__") See menu      
-    a(class="header__") THE PRESIDIO
-    nav(class="header__menu")
+header(class="psd-header")
+  div(class="psd-header__container")
+    a(class="psd-header__burger" id="top__menu-mobile") See menu  
+      span
+      span
+      span    
+    a(class="psd-header__logo") THE PRESIDIO
+    nav(class="psd-header__menu")
       div
         div 
-          div
+          div(class="psd-header__menu--primary")
             div
               div
-                ul
-                  li
-                    span Open
-                    a 
-                      span  
+                ul(class="root")
+                  li(class="dynamic-children")
+                    span(class="open") Open
+                    a(href="#") 
+                      span(class="additional-background dynamic-children")  
                         span Visit
-                    ul
+                    ul(class="dinamyc")
                       li
                         a(href="#")
                           span
-                            span Visit The Presidio
+                            span Visit the Presidio
                       li
                         a(href="#")
                           span
-                            span Plan your visit
+                            span Plan Your Visit
                       li
                         a(href="#")
                           span
@@ -30,7 +33,7 @@ header(class="header")
                       li
                         a(href="#")
                           span
-                            span Presidio Visitor Center
+                            span Presidio Visitor Guide
                       li
                         a(href="#")
                           span
@@ -44,19 +47,19 @@ header(class="header")
                           span
                             span Virtual Map
                       li
-                        a(href="#")
+                        a(href="/espanol")
                           span
                             span Español
                       li
-                        a(href="#")
+                        a(href="/chinese")
                           span
                             span Chinese
-                  li
-                    span Open
-                    a 
-                      span  
+                  li(class="dynamic-children")
+                    span(class="open") Open
+                    a(href="#") 
+                      span(class="additional-background dynamic-children")  
                         span Events
-                    ul
+                    ul(class="dinamyc")
                       li
                         a(href="#")
                           span
@@ -93,12 +96,12 @@ header(class="header")
                         a(href="#")
                           span
                             span Chinese
-                  li
-                    span Open
-                    a 
-                      span  
+                  li(class="dynamic-children")
+                    span(class="open") Open
+                    a(href="#") 
+                      span(class="additional-background dynamic-children")  
                         span Places to Go
-                    ul
+                    ul(class="dinamyc")
                       li
                         a(href="#")
                           span
@@ -135,12 +138,12 @@ header(class="header")
                         a(href="#")
                           span
                             span Chinese        
-                  li
-                    span Open
-                    a 
-                      span  
-                        span things to Do
-                    ul
+                  li(class="dynamic-children")
+                    span(class="open") Open
+                    a(href="#") 
+                      span(class="additional-background dynamic-children")  
+                        span Things to Do
+                    ul(class="dinamyc")
                       li
                         a(href="#")
                           span
@@ -177,12 +180,12 @@ header(class="header")
                         a(href="#")
                           span
                             span Chinese
-                  li
-                    span Open
+                  li(class="dynamic-children")
+                    span(class="open") Open
                     a 
-                      span  
+                      span(class="additional-background dynamic-children")  
                         span Food
-                    ul
+                    ul(class="dinamyc")
                       li
                         a(href="#")
                           span
@@ -219,12 +222,12 @@ header(class="header")
                         a(href="#")
                           span
                             span Chinese
-                  li
-                    span Open
-                    a 
-                      span  
+                  li(class="dynamic-children")
+                    span(class="open") Open
+                    a(href="#") 
+                      span(class="additional-background dynamic-children")  
                         span Lodging
-                    ul
+                    ul(class="dinamyc")
                       li
                         a(href="#")
                           span
@@ -261,12 +264,12 @@ header(class="header")
                         a(href="#")
                           span
                             span Chinese
-                  li
-                    span Open
-                    a 
-                      span  
+                  li(class="dynamic-children")
+                    span(class="open") Open
+                    a(href="#") 
+                      span(class="additional-background dynamic-children")  
                         span Transportation
-                    ul
+                    ul(class="dinamyc")
                       li
                         a(href="#")
                           span
@@ -303,12 +306,12 @@ header(class="header")
                         a(href="#")
                           span
                             span Chinese
-                  li
-                    span Open
-                    a 
-                      span  
+                  li(class="dynamic-children")
+                    span(class="open") Open
+                    a(href="#") 
+                      span(class="additional-background dynamic-children")  
                         span Lease
-                    ul
+                    ul(class="dinamyc")
                       li
                         a(href="#")
                           span
@@ -346,11 +349,11 @@ header(class="header")
                           span
                             span Chinese
                   li
-                    span Open
-                    a 
-                      span  
+                    span(class="open") Open
+                    a(href="#") 
+                      span 
                         span Blog
-                    ul
+                    ul(class="dinamyc")
                       li
                         a(href="#")
                           span
@@ -387,36 +390,36 @@ header(class="header")
                         a(href="#")
                           span
                             span Chinese
-          div
+          div(class="psd-header__menu--secondary")
             div
               div
                 div
                   div
                     ul
-                      li
+                      li(class="static")
                         a
                           span
                             span The Presidio
-                      li
+                      li(class="static")
                         a
                           span
                             span Presidio Trust
-                      li
+                      li(class="static")
                         a
                           span
                             span  Presidio Tunnel Tops
-                      li
+                      li(class="static")
                         a
                           span
                             span  For Teachers
-                      li
+                      li(class="static")
                         a
                           span
                             span  Fort Winfield Scott RFCP                      
-    div(class="header__search")
+    div(class="psd-header__search" id="top__search")
       label(for="")
-      input(class="", type="search", name="", placeholder="")
-    div(class="header__user")
+      input(class="search-box", type="search", name="", placeholder="")
+    div(class="psd-header__user")
 
 
   

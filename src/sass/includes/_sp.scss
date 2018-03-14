@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#dummy_content{
+    // DELETE!!!
+    height: 1200px;
+    width: 100%;
+}
+
+#s4-workspace {
+    backface-visibility: hidden;
+    height: 650px;
+    padding-left: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+    -webkit-backface-visibility: hidden;
+    @include transition(padding-left .3s ease);
+    &.frozen {
+        overflow: hidden;
+    }
+    #s4-bodyContainer {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        box-sizing: border-box;
+        min-height: 100%;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 1;
+    }
+}
