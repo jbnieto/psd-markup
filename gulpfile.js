@@ -7,7 +7,9 @@ var gulp = require('gulp'),
   pug = require('gulp-pug'),
   prefix = require('gulp-autoprefixer'),
   sass = require('gulp-sass'),
-  browserSync = require('browser-sync');
+  browserSync = require('browser-sync'),
+  sassLint = require('gulp-sass-lint'),
+  g = require("gulp-load-plugins")();
 
 /*
  * Directories here
@@ -15,7 +17,9 @@ var gulp = require('gulp'),
 var paths = {
   public: './public/',
   sass: './src/sass/',
-  css: './public/css/',
+  css: './src/css/',
+  precss: './src/css/style.css',
+  postcss: './public/css/',
   data: './src/_data/'
 };
 
@@ -75,21 +79,36 @@ gulp.task('sass', function () {
     }));
 });
 
+gulp.task("design.build", function() {
+	gulp.src(paths.precss)
+		.pipe(g.extractMediaQueries())
+		.pipe(gulp.dest(paths.postcss));
+});
+
 /**
  * Watch scss files for changes & recompile
  * Watch .pug files run pug-rebuild then reload BrowserSync
  */
 gulp.task('watch', function () {
   gulp.watch(paths.sass + '**/*.scss', ['sass']);
+  gulp.watch(paths.precss, ['design.build']);
   gulp.watch('./src/**/*.pug', ['rebuild']);
 });
 
 // Build task compile sass and pug.
 gulp.task('build', ['sass', 'pug']);
 
+
+gulp.task('sass-lint', function () {
+  return gulp.src('src/sass/**/*.s+(a|c)ss')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+});
+
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync then watch
  * files for changes
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['browser-sync', 'watch', 'sass-lint']);

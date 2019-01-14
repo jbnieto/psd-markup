@@ -1,0 +1,56 @@
+.psd-explore {
+    $a: &;
+    .ms-srch-group-content { // SP Class
+        margin: 0 auto;
+        max-width: 1320px;
+        padding: 0;
+        width: 100%;
+        @include flexbox();
+        @include flex-flow(row wrap);
+        @include justify-content(space-around);
+    }
+    #{$a}{
+        &__item {
+            cursor: pointer;
+            height: 310px;
+            margin: 10px 0;
+            overflow: hidden;
+            position: relative;
+            width: calc(33.33% - 13.33px);
+            &:hover {
+                #{$a}__title{
+                    background-color: $palette-12;
+                }
+            }
+            @include tablet {
+                width: calc(50% - 13.33px);
+            }
+            @include mobile {
+                width: 100%;
+            }
+        }
+        &__title {
+            background-color: $palette-11;
+            color: $palette-1;
+            font-family: $font-1;
+            @include font-size(40px);
+            line-height: 310px;
+            padding: 0; // Overwrite SP styles
+            position: absolute;
+            text-align: center;
+            @include transition(background-color .3s ease);
+            width: 100%;
+            a{
+                color: $palette-1;
+            }
+        }
+        &__more {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            text-indent: -2000em;
+            width: 100%;
+        }
+    }
+
+}

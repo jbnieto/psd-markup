@@ -1,0 +1,626 @@
+.psd-header {
+    $a: &;
+    @include font-size(18px);
+    font-family: $font-0;
+    left: 0;
+    margin-left: 0;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    @include transition(margin-left .3s ease);
+    z-index: 13;
+    @include tablet {}
+    @include desktop {}
+    @include big-desktop {}
+    a {
+        text-decoration: none;
+    }
+    &:after {
+        background-color: $palette-0;
+        content: ' ';
+        height: 0;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+        @include transition(opacity .3s ease);
+    }
+    &:before {
+        // Header background
+        background-color: $palette-6;
+        border-bottom: 1px solid transparent;
+        height: 100px;
+        content: ' ';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+        @include transition(background-color .3s ease, height .3s ease, border-bottom .3s ease);
+    }
+    &.mobile {
+        // Class used to show lateral menu
+        margin-left: calc(300px - 46px);
+    }
+    &.searching {
+        height: 100%;
+        &:after {
+            height: 100%;
+            opacity: .75;
+        }
+    }
+    &.header--fixed {
+        &.searching {
+            // When is searching 
+            &:before {
+                height: 132px;
+            }
+        }
+        &:before {
+            background-color: $palette-4;
+            border-bottom: 1px solid $palette-5;
+            content: ' ';
+            height: 82px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+            @include transition(background-color .3s ease, height .3s ease, border-bottom .3s ease);
+        }
+    }
+    &__container {
+        margin: 19px auto 0;
+        max-width: 1366px;
+        width: 100%;
+        @include transition(margin .3s ease);
+        #{$a}.mobile & {
+            // When the lateral menu is opened
+            margin: 19px 0 0;
+        }
+        #{$a}.searching & {
+            // When is searching 
+            margin-top: 69px;
+        }
+    }
+    &__burger {
+        // Burger Icon
+        float: left;
+        height: 25px;
+        left: 0;
+        margin: 10px 0 0 12px;
+        position: relative;
+        text-indent: -10000px;
+        width: 25px;
+        @include transition(left .3s ease);
+        span {
+            background-color: $palette-1;
+            display: block;
+            float: left;
+            height: 3px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 25px;
+            @include transform-origin(center center);
+            @include transition(transform .3s ease, opacity .3s ease, top .3s ease);
+            &:nth-child(2) {
+                top: 9px;
+            }
+            &:nth-child(3) {
+                top: 18px;
+            }
+        }
+        #{$a}.mobile & {
+            // When the lateral menu is opened
+            left: 238px;
+            margin-top: 0;
+            position: fixed;
+            z-index: 2;
+            span {
+                &:nth-child(1),
+                &:nth-child(3) {
+                    height: 1px;
+                    top: 12px;
+                }
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        @include big-desktop {
+            margin: 10px 0 0 0px;
+        }
+    }
+    &__logo {
+        // Logo header 
+        float: left;
+        height: 28px;
+        margin: 0 20px 0;
+        text-indent: -10000px;
+        width: 192px;
+        @include imgSprite('presidio-trust-header');
+        #{$a}.mobile & {
+            margin-left: 50px;
+            @include big-desktop {
+                margin-left: 57px;
+            }
+        }
+        @include mobile {
+            background-position: 0 -518px;
+            height: 42px;
+            margin: 0px 8px;
+            width: 126px;
+        }
+    }
+    &__menu {
+        // Menu container
+        float: left;
+        padding: 8px 0 0 10px;
+        @include big-desktop {
+            display: inline-block;
+            float: right;
+        }
+        &--primary {
+            // Primary - desktop top menu
+            @include tablet {
+                font-size: 20px;
+                height: auto;
+                padding-top: 82px;
+            }
+            @include big-desktop {
+                height: 35px;
+            }
+            .top__navigation--primary--open{
+                cursor: pointer;
+                display: block;
+                float: right;
+                height: 25px;
+                margin: 5px 27px 0 0;
+                text-indent: -10000px;
+                &:after {
+                    color: $palette-1;
+                    float: right;
+                    text-indent: 0;
+                    font-family: $font-5;
+                    font-style: normal;
+                    font-variant: normal;
+                    font-weight: 400;
+                    text-transform: none;
+                    speak: none;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    content: $icon-chevron-down;
+                }
+                @include big-desktop {
+                    display: none; 
+                }
+            }
+            ul {
+                &.root {
+                    // First level menu
+                    font-weight: lighter;
+                    padding: 0;
+                    @include big-desktop {
+                        padding: 0 0 0 5px;
+                    }
+                    a {
+                        color: $palette-1;
+                        display: inline-block;
+                        &.ms-core-listMenu-item{
+                            margin-right: 0; // Overwrite SP style
+                        }
+                        &:hover{
+                            color: $palette-1;
+                        }
+                    }
+                    .open {
+                        cursor: pointer;
+                        display: block;
+                        float: right;
+                        height: 25px;
+                        margin: 5px 43px 0 0;
+                        text-indent: -10000px;
+                        &:after {
+                            color: $palette-1;
+                            float: right;
+                            font-family: $font-5;
+                            content: $icon-chevron-down;
+                            text-indent: 0;
+                        }
+                        @include big-desktop {
+                            display: none;
+                        }
+                    }
+                    @include big-desktop {
+                        >li {
+                            display: inline-block;
+                            font-weight: 300;
+                            margin: 0 12px;
+                            padding: 2px 0 5px;
+                            position: relative;
+                            &.ms-listMenu-editLink{
+                                // SP class to EDIT menu options
+                                display: none;
+                            }
+                            &.selected {                                
+                                >a.ms-core-listMenu-selected {
+                                    color: $palette-1;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.dynamic {
+                    // Second level menu                
+                    @include tablet {
+                        border: none;
+                        @include font-size(18px);
+                        list-style: none;
+                        margin: 0 0 0 -27px;
+                        min-width: calc(100% + 27px);
+                        padding: 0;
+                        position: static;
+                    }
+                    @include big-desktop {
+                        background-color: $palette-2;
+                        border: 0;
+                        box-shadow: none;
+                        display: none;
+                        @include font-size(16px);
+                        left: -15px; // DELETE!
+                        margin: 0 0 0 15px;
+                        min-width: 230px;
+                        padding: 0;
+                        position: absolute;
+                        top: 31px !important; // DELETE!
+                    }
+                    a {
+                        color: $palette-1;
+                        padding-bottom: 0;
+                        &[href$='/chinese']:before,
+                        &[href$='/espanol']:before {
+                            font-family: $font-5;
+                            content: $icon-info;
+                            margin-right: 5px;
+                            font-weight: 400;
+                        }
+                        &:hover {
+                            color: $palette-0;
+                            @include mobile {
+                                color: $palette-1;
+                            }
+                            @include tablet {
+                                color: $palette-1;
+                            }
+                        }
+                        @include big-desktop {
+                            color: $palette-0;
+                        }
+                    }
+                    >li {
+                        @include tablet {
+                            border-bottom: none;
+                            border-top: 1px solid $palette-7;
+                            display: list-item;
+                            margin: 0;
+                            padding: 12px 0 12px 64px;
+                            white-space: nowrap;
+                        }
+                        @include big-desktop {
+                            border-bottom: 1px solid $palette-3;
+                            padding: 8px 15px;
+                        }
+                    }
+                }
+                li {
+                    ul {
+                        background-color: transparent;
+                        display: none;
+                        position: initial;
+                        @include big-desktop {
+                            background-color: $palette-2;
+                            display: inline-block;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+            li { 
+                list-style: none;
+                padding: 15px 0 0 27px;
+                position: relative;
+                width: 100%;
+                &.ms-listMenu-editLink {
+                    display: none;
+                }
+                @include tablet {
+                    border-bottom: 1px solid $palette-7;
+                    display: inline-block;
+                }
+                @include big-desktop {
+                    width: auto;
+                    span.dynamic-children.additional-background:after {
+                        // Down arrow               
+                        font-family: $font-5;
+                        @include font-size(14px);
+                        height: 22px;
+                        @include line-height(22px);
+                        padding: 0 0 0 6px;
+                        text-align: center;
+                        width: 28px;
+                        content: $icon-chevron-down;
+                    }
+                }
+                >a {
+                    padding-bottom: 13px;
+                }
+                &.dynamic-children{
+                    .dynamic-children.additional-background{
+                        background: none; // SP
+                        padding-right: 0; // SP
+                    }
+                    &:hover {
+                        ul.dynamic {
+                            display: none;
+                            @include big-desktop { 
+                                display: block; 
+                            }
+                        }
+                        @include big-desktop {
+                            > a { 
+                                border-bottom: 3px solid $palette-1; 
+                                padding-bottom: 4px;
+                            }
+                            span.dynamic-children.additional-background:after {
+                                content: $icon-chevron-down;
+                            }
+                        }
+                    }
+                }
+                &.opened {
+                    background-color: $palette-8;
+                    border-bottom: 1px solid $palette-7;
+                    padding-bottom: 0;
+                    .open:after {
+                        content: $icon-chevron-up;
+                    }
+                    .top__navigation--primary--open {
+                        &:after {
+                            @include mobile { 
+                                content: $icon-chevron-up;
+                            }
+                            @include tablet { 
+                                content: $icon-chevron-up;
+                            }
+                        }
+                    }
+                }
+                &.selected {
+                    a.selected.menu-item.ms-core-listMenu-selected {
+                        border-bottom: 3px solid $palette-1;
+                        color: $palette-1;
+                        padding-bottom: 6px;
+                    }
+                }
+            }
+        }
+        &--secondary {
+            // Secondary - Aside lateral menu
+            // display: none; //DELETE!
+            background-color: transparent;
+            @include font-size(20px);
+            font-weight: 300;
+            height: auto;
+            margin-top: 0;
+            overflow: initial;
+            padding: 0;
+            position: initial;
+            width: 300px;
+            #sideNavBox { // SP
+                float: initial;
+                margin-left: 0;
+                margin-right: 0;
+                width: auto;
+                @include mobile {
+                    width: 100%;
+                }
+                @include tablet {
+                    width: 100%;
+                }
+            }
+            @include mobile {
+                display: inline-block;
+                padding-bottom: 71px;
+            }
+            @include tablet {
+                display: inline-block;
+                padding-bottom: 71px;
+            }
+            @include big-desktop {
+                background-color: $palette-4;
+                height: 100%;
+                left: -300px;
+                margin-top: -62px;
+                overflow-y: visible;
+                position: fixed;
+                @include transition(left .3s ease);
+            }
+            #{$a}.mobile & {
+                // When the lateral menu is opened
+                left: 0;
+            }
+            hr { // SP
+                display: none;
+            }
+            a {
+                color: $palette-1;
+            }
+            ul {
+                font-weight: 300;
+                padding: 0;
+                @include big-desktop {
+                    padding: 82px 0 0 15px;
+                }
+            }
+            li.static {
+                border-bottom: 1px solid $palette-7;
+                margin: 0;
+                padding: 15px 0 0 27px;
+                &.ms-listMenu-editLink { // SP
+                    display: none;
+                }
+                > .ms-core-listMenu-item { 
+                    font-family: $font-0;
+                    @include tablet {
+                        color: $palette-1;
+                        padding: 5px 0 13px;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                    @include mobile {
+                        color: $palette-1;
+                        padding: 5px 0 13px;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+                @include big-desktop {
+                    border: none;
+                    margin: 0 12px;
+                    padding: 15px 0 0;
+                    > .ms-core-listMenu-item {
+                        color: $palette-1;
+                        padding: 0;
+                        padding-bottom: 13px;
+                        &:hover {
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        >div {
+            @include tablet {
+                background-color: $palette-4;
+                height: 100%;
+                left: -300px;
+                margin-top: -27px;
+                overflow-x: hidden;
+                position: fixed;
+                visibility: visible;
+                width: 300px;
+                @include transition(left .3s ease);
+            }
+            #{$a}.mobile & {
+                left: 0;
+            }
+            >div {
+                @include tablet {
+                    height: 100%;
+                    overflow-y: scroll;
+                    position: absolute;
+                    width: 317px;
+                }
+            }
+            &:before {
+                @include tablet {
+                    background-color: $palette-4;
+                    content: ' ';
+                    height: 82px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+    &__search {
+        // Search
+        cursor: pointer;
+        float: right;
+        height: 36px;
+        margin: 6px 25px 0 0;
+        position: relative;
+        width: 36px;
+        &:before {
+            color: $palette-1;
+            font-family: $font-5;
+            @include font-size(30px);
+            height: 36px;
+            @include line-height(36px);
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 36px;
+            z-index: 0;
+            font-weight: 400;
+            @include transition(color .3s ease);
+            content: $icon-search;
+            #{$a}.searching & {
+                // When is searching 
+                top: 69px;
+            }
+        }
+        label {
+            cursor: pointer;
+            display: none;
+            height: 36px;
+            position: absolute;
+            right: 0;
+            text-indent: -10000px;
+            width: 36px;
+            z-index: 3;
+        }
+        input {
+            border: none;
+            color: $palette-0;
+            cursor: pointer;
+            display: none;
+            font-family: $font-0;
+            @include font-size(22px);
+            font-weight: 300;
+            height: 0;
+            outline: 0;
+            padding: 5px 15px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 3;
+            @include transition(height .3s ease);
+            #{$a}.searching & {
+                // When is searching 
+                display: block;
+                height: 50px;
+                width: 100%;
+            }
+        }
+        #{$a}.searching & {
+            // When is searching 
+            height: auto;
+            margin: -112px 0 0;
+            width: 100%;
+        }
+        @include mobile {
+            margin: 3px 9px;
+        }
+    }
+    &__user {}
+    .navbar-toggle {
+        @include mobile {
+            display: none;
+        }
+    }
+}

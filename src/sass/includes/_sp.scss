@@ -1,39 +1,164 @@
 body {
-    margin: 0px;
-    overflow: hidden;
+  margin: 0;
+  overflow: hidden;
 }
 
-#dummy_content{
-    // DELETE!!!
-    height: 1200px;
-    width: 100%;
+// sass-lint:disable no-ids
+#dummy_content {
+  // DELETE!!!
+  height: 1200px;
+  width: 100%;
 }
 
+.list-item-inline .article-item img {
+  display: block !important;
+}
+
+// sass-lint:disable no-ids, property-sort-order, no-vendor-prefixes
 #s4-workspace {
-    backface-visibility: hidden;
-    height: 650px;
-    padding-left: 0;
-    overflow: auto;
-    overflow-x: hidden;
-    position: relative;
-    width: 100%;
-    z-index: 1;
+  @include transition(padding-left .3s ease);
+  backface-visibility: hidden;
+  height: 650px;
+  padding-left: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  
+  &.frozen {
+    overflow: hidden;
+  }
+
+  // sass-lint:disable no-ids, property-sort-order, no-vendor-prefixes
+  #s4-bodyContainer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
     -webkit-backface-visibility: hidden;
-    @include transition(padding-left .3s ease);
-    &.frozen {
-        overflow: hidden;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .app-container {
+    background-color: $palette-1;
+    min-height: 750px;
+    padding-top: 180px;
+    &:before {
+      @include linearGradient( $palette-9, $palette-10)
+      content: " ";
+      height: 180px;
+      margin-top: -180px;
+      position: absolute;
+      width: 100%;
+      z-index: 0;  
     }
-    #s4-bodyContainer {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-overflow-scrolling: touch;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        box-sizing: border-box;
-        min-height: 100%;
-        padding-bottom: 0;
-        position: relative;
-        z-index: 1;
+  }
+}
+
+.ms-srch-group-content {
+  @include flexbox();
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+}
+
+.list-item-inline .article-item {
+  @include tablet {
+    display: table !important;
+    margin: 0 20px 60px !important; 
+  }
+  @include mobile {
+    display: table !important;
+  }
+  &:nth-child(4n), &:nth-child(4n + 1) {
+    margin: 0 20px 60px !important; 
+    @include tablet {
+      margin: 0 20px 60px !important; 
     }
+    @include mobile {
+      margin: 0 calc(50% - 140px) 60px !important;
+    }
+  }
+}
+
+.container-fluid>.container-fluid:not(.content-detail):not(.column-layout)>.container>article>.content-detail-intro {
+  @include tablet {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  @include mobile {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  @include big-desktop {
+    padding-left: 12px;
+  }
+}
+
+.list-item-inline .article-item:nth-child(3), .list-item-inline .article-item:nth-child(4) {
+  @include mobile {
+    margin: 0 calc(50% - 140px) 60px;
+  }
+}
+
+.container-fluid.content-detail .container>article section.content-detail-body, .container-fluid.column-layout .container>article section.content-detail-body {
+  @include mobile {
+    padding: 0 12px;
+  }
+}
+
+#s4-bodyContainer .column-layout .container aside .ms-rtestate-field {
+  @include tablet {
+    padding: 0 10px;
+  }
+  @include mobile {
+    padding: 0 10px;
+  }  
+}
+
+.ms-webpart-zone {
+  @include tablet {
+    display: inline-block;
+  }
+  @include mobile {
+    display: inline-block;
+  }  
+}
+
+.nearbyPlaces-container .nearbyPlaces-info-detail .map-info-body p {
+  @include mobile {
+    max-height: 58px;
+    height: 58px !important;
+  }
+}
+
+@media print {
+  .psd-header, .psd-footer {
+    display: none;
+  }
+}
+
+.main_landing .ms-webpartzone-cell span {
+  display: inline-block;
+}
+
+.app-container .ms-srch-result #Paging.ms-srch-Paging li #PageLinkNext:before {
+  content: $icon-right;
+}
+
+.app-container .ms-srch-result #Paging.ms-srch-Paging li #PageLinkPrev:before {
+  content: $icon-left;
+}
+
+.banner .container {
+  @include tablet {
+    margin: 15em auto 0;
+  }
 }

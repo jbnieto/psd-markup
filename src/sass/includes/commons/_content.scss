@@ -1,0 +1,8 @@
+.psd-content {
+    padding-top: 180px;
+    position: relative;
+    z-index: -1; 
+    @include tablet {
+        padding-top: 82px;
+    }
+}

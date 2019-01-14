@@ -2,12 +2,20 @@ extends _layouts/home
 
 block head_end
 	link(rel="stylesheet" href="/css/style.css") 
+	link(rel="stylesheet" href="/css/min-width-1270px.css",
+	media='screen and (min-width: 1270px)') 
+	link(rel="stylesheet" href="/css/max-width-1269px.css",
+	media='screen and (max-width: 1269px)') 
+	link(rel="stylesheet" href="/css/only-screen-and-max-width-480px-and-max-aspect-ratio-4-3-only-screen-and-max-width-768px-and-min-aspect-ratio-4-3.css",
+	media='screen and (max-width: 480px) and (max-aspect-ratio: 4/3), only screen and (max-width: 768px) and (min-aspect-ratio: 4/3)') 
 	script(type="text/javascript" src="/libs/jquery.min.js")
 
 block content
 	div(id="s4-workspace")
 		div(id="s4-bodyContainer")
 			include _partials/header
+			include _partials/content
+			include _partials/explore
 			div(id="dummy_content")
 			include _partials/footer 
 

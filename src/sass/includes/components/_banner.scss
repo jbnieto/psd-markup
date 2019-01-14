@@ -1,0 +1,100 @@
+.psd-banner {
+    $a: &;
+    background-size: cover;
+    height: 620px;
+    margin-top: -180px;
+    position: relative;
+    #{$a}__list {
+        height: 620px;
+    }
+    #{$a}__item {
+        display: table;
+        height: 620px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        img {
+            position: absolute;
+        }
+        &--text {
+            display: table-cell;
+            font-family: $font-0;
+            height: 620px;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            z-index: 2;   
+            h1 {
+                color: #fff;
+                font-size: 70px;
+                font-weight: 700;
+                padding: 1em 0px 0;
+                text-align: center;
+            }     
+            span {
+                font-size: 30px;
+                color: #fff;
+                font-weight: 400;
+            }
+            a {
+                background-color: #fff;
+                color: $palette-4;
+                display: table;
+                font-size: 25px;
+                font-weight: 400;
+                margin: 30px auto 0;
+                padding: 10px 25px;
+            }
+        }
+        &:after{
+            @include linearGradient($palette-11, $palette-12);
+            content: ' ';
+            height: 620px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 0;
+        }
+    }
+    #{$a}__indicators {
+        display: table;
+        float: right;
+        height: 620px;
+        left: 0;
+        margin-right: 12px;
+        margin-top: -620px;
+        position: relative;
+        width: 20px;
+        z-index: 12;
+        ol {
+            bottom: initial;
+            display: table-cell;
+            left: 0;
+            list-style: none;
+            margin-left: 0;
+            padding: 0;
+            position: inherit;
+            vertical-align: middle;
+            text-align: center;
+            width: 21px;
+            z-index: 3;
+            li {
+                background-color: #fff;
+                border: none;
+                border-radius: 11px;
+                display: inline-block;
+                margin: 0;
+                opacity: .4;
+                height: 21px;
+                width: 21px;
+                @include transition(opacity .3s ease);
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

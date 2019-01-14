@@ -1,0 +1,18 @@
+#breadcumps {
+    padding-left: 12px;
+    @include tablet {
+        padding-left: 12px;
+    }
+    @include mobile {
+        padding-left: 12px;
+    }
+    @include big-desktop {
+        padding-left: 12px;
+    }
+}
+
+#breadcumps ul li ul li:before,
+.breadcumps ul li ul li:before {
+    content: $icon-breadcumps;
+    font-family: $font-5;
+}

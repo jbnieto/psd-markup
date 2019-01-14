@@ -1,0 +1,265 @@
+.psd-footer {
+    $a: &;
+    background-color: $palette-4;
+    bottom: 0;
+    @include font-size(16px);
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 412px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    z-index: 10;
+    a {
+        color: $palette-1;
+        text-decoration: none;
+    }
+    #{$a}{   
+        &__container {
+            margin: 0 auto;
+            max-width: 1366px;
+            padding: 100px 0 70px;
+            width: 100%;
+            @include big-desktop {
+                padding: 100px 40px 70px;
+            }
+        }
+        &__heading {
+            @include font-size(22px);
+            font-weight: 700;
+            padding: 0 0 40px;
+            a {
+                @include imgSprite('presidio-footer');
+                display: inline-block;
+                text-indent: -10000px;
+            }
+            @include tablet {
+                text-align: center;
+            }
+        }
+        &__column {
+            float: left;
+            font-size: 18px;
+            font-family: $font-0;
+            font-weight: lighter;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            width: 100%;
+            @include mobile {
+                display: block;
+                position: relative;
+                z-index: 2;
+            }
+            @include tablet {
+                display: block;
+                position: relative;
+                z-index: 2;
+            }
+            @include big-desktop {
+                text-align: center;
+                width: 25%;
+            }
+            li {
+                text-align: center;
+                @include line-height(18px);
+                padding: 8px 0;
+                @include big-desktop {
+                    text-align: left;
+                }
+            }
+        }
+        &__singup {
+            $b: singup;
+            display: block;
+            font-family: $font-0;
+            margin: 0 auto;
+            padding: 10px 0 0;
+            position: relative;
+            text-align: center;
+            width: 290px;
+            z-index: 1;
+            @include big-desktop {
+                display: inline-block;
+                padding: 0;
+                text-align: left;
+                width: 25%;
+            }
+            &__container {
+                display: inline-block;
+                min-height: 150px;
+                position: relative;
+                #{$a}__#{$b}__heading {
+                    color: $palette-1;
+                    @include font-size(18px);
+                    font-weight: 700;
+                    @include line-height(18px);
+                    padding: 8px 0;
+                    text-transform: uppercase;
+                }
+                #{$a}__#{$b}__label {
+                    display: none;
+                    font-weight: 400;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+                #{$a}__#{$b}__input-text {
+                    background-color: transparent;
+                    border: 1px solid $palette-1;
+                    color: $palette-1;
+                    font-family: $font-3;
+                    @include font-size(18px);
+                    font-style: italic;
+                    font-weight: lighter;
+                    float: left;
+                    height: 40px;
+                    @include line-height(40px);
+                    margin: 0;
+                    padding: 5px;
+                    width: calc(100% - 80px);
+                    @include placeholder {
+                        color: $palette-1;
+                    }
+                }
+                #{$a}__#{$b}__button {
+                    border: none;
+                    background-color: $palette-1;
+                    color: $palette-4;
+                    font-family: $font-1;
+                    @include font-size(18px);
+                    font-style: italic;
+                    float: left;
+                    font-style: italic;
+                    height: 40px;
+                    padding: 0;
+                    margin: 0;
+                    max-width: 80px;
+                    min-width: 80px;
+                    width: 80px;
+                }
+                #{$a}__#{$b}__fb {
+                    border: 1px solid $palette-1;
+                    display: block;
+                    height: 40px;
+                    font-family: $font-3;
+                    @include font-size(18px);
+                    float: left;
+                    font-weight: lighter;
+                    @include line-height(40px);;
+                    margin: 40px 0 0;
+                    text-align: center;
+                    @include transition(background-color .3s ease, color .3s ease);
+                    width: 100%;
+                    &:before {
+                        background-color: $palette-1;
+                        color: $palette-4;
+                        font-family: $font-5;
+                        content: $icon-facebook;
+                        float: left;
+                        font-size: 24px;
+                        height: 38px;
+                        text-align: center;
+                        width: 40px;
+                        @include transition(background-color .3s ease, color .3s ease);
+                    }
+                    &:hover{
+                        background-color: $palette-1;
+                        color: $palette-4;
+                        &:before{
+                            background-color: $palette-4;
+                            color: $palette-1;
+                        }
+                    }
+                }
+                @include mobile {
+                    padding-top: 20px;
+                }
+                @include tablet {
+                    padding-top: 20px;
+                }
+            }
+        }
+        &__social {
+            float: none;
+            margin: 0 auto;
+            padding: 50px 0 0;
+            text-align: center;
+            width: 290px;
+            @include big-desktop {
+                float: right;
+                padding: 46px 0 0;
+                text-align: left;
+                width: 25%;
+            }
+            >strong {
+                color: $palette-1;
+                display: block;
+                font-family: $font-0;
+                @include font-size(18px);
+                font-weight: 700;
+                @include line-height(18px);
+                padding: 8px 0;
+            }
+            >a {
+                color: $palette-1;
+                border: 1px solid $palette-1;
+                float: left;
+                font-family: $font-5;
+                font-size: 22px;
+                height: 40px;
+                line-height: 40px;
+                margin: 0 calc(10% - 24px);
+                text-align: center;
+                width: 40px;
+                @include transition(background-color .3s ease, color .3s ease);
+                span {
+                    display: none;
+                }
+                &:before {
+                    font-family: $font-5;
+                }
+                &:nth-of-type(1) {
+                    margin-left: 0;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                &:hover {
+                    background-color: $palette-1;
+                    color: $palette-4;
+                }
+            }
+            &--facebook:before {
+                content: $icon-facebook;
+            }
+            &--twitter:before {
+                content: $icon-twitter;
+            }
+            &--instagram:before {
+                content: $icon-instagram;
+            }
+            &--youtube:before {
+                content: $icon-youtube;
+            }
+            &--pinterest:before {
+                content: $icon-pinterest;
+            }
+            &--linkedin:before {
+                content: $icon-linkedin;
+            }
+        }
+        &__credits {
+            color: $palette-1;
+            display: inline-block;
+            font-family: $font-3;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 90px 0 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+}
