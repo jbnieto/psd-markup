@@ -111,4 +111,6 @@ gulp.task('sass-lint', function () {
  * compile the jekyll site, launch BrowserSync then watch
  * files for changes
  */
-gulp.task('default', ['browser-sync', 'watch', 'sass-lint']);
+
+//gulp.task('default', ['browser-sync', 'watch', 'sass-lint']); // Comment linters
+gulp.task('default', ['browser-sync', 'watch']);

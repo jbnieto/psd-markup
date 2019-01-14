@@ -1,9 +1,9 @@
 {
-  "name": "gulp-pug-sass-starter",
+  "name": "Presidio Front End",
   "version": "1.0.0",
   "description": "A Pug and Sass starter project using gulp for task automation.",
   "main": "gulpfile.js",
-  "author": "Joshua Azemoh <joshazemoh@gmail.com> (http://azemoh.com)",
+  "author": "Jose Julian Betancur Nieto",
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
