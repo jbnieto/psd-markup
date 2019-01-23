@@ -1002,6 +1002,10 @@ select,input {
     border-radius: 0
 }
 
+a:focus, input:focus {
+outline: 3px solid #aa3e35;
+}
+
 @media screen and (max-width: 1280px) {
     .container-fluid.content-detail .container>article,.container-fluid.column-layout .container>article {
         width:60%
@@ -9027,9 +9031,14 @@ h3.ms-standardheader {
     position: absolute
 }
 
-#s4-bodyContainer a:hover,#s4-bodyContainer a:focus,#s4-bodyContainer a:active,#s4-bodyContainer a:visited {
+#s4-bodyContainer a:hover,#s4-bodyContainer a:active,#s4-bodyContainer a:visited {
     outline: none;
     text-decoration: none
+}
+
+#s4-bodyContainer a:focus {
+    outline: 3px solid #aa3e35;
+    text-decoration: none;
 }
 
 #s4-bodyContainer .main_landing .ms-webpartzone-cell:nth-of-type(4) .section-content h3.article-resume__info--title {
