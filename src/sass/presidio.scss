@@ -3061,24 +3061,38 @@ header.mobile #top__menu-mobile span:nth-child(3) {
     top: 0;
     z-index: 0;
 }
-#s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode a:hover, #s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode__list {
+#s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode button:hover, #s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode__list {
     background-color: #05668d;
     color: #fff;
 }
-#s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode a {
+#s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode button {
     border: 1px solid #05668d;
     font-size: 20px;
     float: right;
     height: 40px;
     line-height: 40px;
+    min-width: auto;
+    padding: 0;
     text-align: center;
     text-indent: -10000px;
     width: 40px;
 }
-#s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode a:nth-child(2) {
+#s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode button:nth-child(2) {
     border-right: none;
 }
-#s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode a:after {
+#s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode fieldset {
+    display: inline-block;
+    float: right;
+}
+#s4-bodyContainer .app-container .filter-page .filter-module--results-list--view-mode button:after {
+    font-family: icomoon-shaped;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     float: right;
     height: 38px;
     line-height: 38px;
