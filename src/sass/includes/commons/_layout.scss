@@ -1,0 +1,20 @@
+.container-fluid {
+    &.column-layout {
+        .container {
+            >main {
+                float: left;
+                margin: 0 0 0 10px;
+                padding: 0 20px 30px 0;
+                width: 720px;
+                @include tablet {
+                    float: initial;
+                    width: 100%;
+                }
+            }
+            >aside {
+                display: initial;
+            }
+        }
+        
+    }
+}
