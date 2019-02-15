@@ -1007,8 +1007,16 @@ input {
     border-radius: 0
 }
 
-a:focus, input:focus {
-outline: 3px solid #aa3e35;
+.visuallyhidden {
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px;
+    white-space:nowrap
 }
 
 @media screen and (max-width:1280px) {
@@ -2619,7 +2627,7 @@ header.mobile #top__menu-mobile span:nth-child(3) {
 }
 
 .bottom-footer__form-signup--label {
-    display: none
+    /*display: none*/
 }
 
 .bottom-footer__form-signup--input-text {
@@ -2757,7 +2765,7 @@ header.mobile #top__menu-mobile span:nth-child(3) {
 }
 
 .bottom-footer__social__net span {
-    display: none
+    /*display: none*/
 }
 
 .bottom-footer__social__net:before {
