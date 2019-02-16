@@ -1852,16 +1852,21 @@ header.mobile #top__menu-mobile span:nth-child(3) {
 }
 
 .home-banner--carousel .carousel-inner .item {
-    display: table;
+    display: none;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 10
 }
-
+.home-banner--carousel .carousel-inner .item.next,
+.home-banner--carousel .carousel-inner .item.left
+ {
+    display: table;
+}
 .home-banner--carousel .carousel-inner .item.active {
-    z-index: 12
+    display: table;
+    z-index: 12;
 }
 
 .home-banner--carousel .carousel-inner .item.next {
