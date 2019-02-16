@@ -274,13 +274,10 @@
                         background-color: $palette-2;
                         border: 0;
                         box-shadow: none;
-                        display: none;
                         @include font-size(16px);
-                        left: -15px; // DELETE!
                         margin: 0 0 0 15px;
                         min-width: 230px;
                         padding: 0;
-                        position: absolute;
                         top: 31px !important; // DELETE!
                     }
                     a {
