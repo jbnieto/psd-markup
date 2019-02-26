@@ -371,10 +371,6 @@
     width: 920px
 }
 
-.container-fluid.column-layout .container>aside {
-    width: calc(100% - 940px)
-}
-
 .container-fluid.content-detail .container>article {
     width: 740px
 }
@@ -500,14 +496,13 @@
 
 .container-fluid.content-detail .container>article .horizontal-results-events .list-item-inline .article-item,
 .container-fluid.column-layout .container>article .horizontal-results-events .list-item-inline .article-item {
-    margin: 0 10px 30px
+    margin: 0 10px 30px;
 }
 
 .container-fluid.content-detail .container>aside,
 .container-fluid.column-layout .container>aside {
     background-color: #f3f3f3;
     display: inline-block;
-    float: left;
     margin: 150px 10px 30px 0;
     min-height: 450px;
     padding: 0 10px
@@ -575,7 +570,7 @@
 }
 
 .container-fluid>.container-fluid.column-layout>.container>aside {
-    margin-top: 0
+    margin-top: 112px;
 }
 
 .list-item-inline {
@@ -1040,8 +1035,7 @@ input {
     .container-fluid.column-layout .container>article .list-item-inline .article-item:nth-child(3n + 1) {
         margin-left: calc(25% - 140px)
     }
-    .container-fluid.content-detail .container>aside,
-    .container-fluid.column-layout .container>aside {
+    .container-fluid.content-detail .container>aside {
         width: calc(40% - 20px)
     }
     .container-fluid.column-layout .container>article .horizontal-results-events .list-item-inline .article-item {
@@ -1055,7 +1049,17 @@ input {
     .container-fluid.column-layout .container>article .horizontal-results-events .list-item-inline .article-item:nth-child(3n + 1) {
         margin: 0 calc(25% - 140px) 30px
     }
+    .container {
+        margin: 0 auto;
+        max-width: 800px;
+        width: 100%;
+    }
+    .container-fluid.column-layout .container>main,
+    .container-fluid>.container-fluid.column-layout>.container>aside {
+        width: 100%;
+    }
 }
+
 
 @media screen and (max-width:1220px) {
     .list-item-inline {
@@ -9730,6 +9734,11 @@ h3.ms-standardheader {
     text-align: left
 }
 
+#s4-bodyContainer .column-layout.container-fluid .container article .carousel,
+#s4-bodyContainer .column-layout.container-fluid .container article .carousel-inner {
+    height: 360px;
+}
+
 #s4-bodyContainer .column-layout .container>p:before {
     content: ' ';
     background-color: #e4eae8;
@@ -15605,9 +15614,17 @@ footer .registration-form .msg-error {
     color: #33691e
 }
 
+.container-fluid.column-layout .container>main {
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 0 20px 30px 0;
+    width: 880px;
+}
+
 .container-fluid.content-detail .container>aside,
 .container-fluid.column-layout .container>aside {
-    margin: 149px 10px 30px 0
+    margin: 0 10px 30px 0;
+    width: calc(100% - 900px);
 }
 
 .container-fluid.content-detail .container>aside #youtube-img,
