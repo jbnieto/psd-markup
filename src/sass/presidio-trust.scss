@@ -249,6 +249,43 @@ button.navbar-toggle.collapsed {
     padding: 27px 44px 8px
 }
 
+header #top__navigation--primary ul li {
+    position: relative;
+}
+header #top__navigation .ms-core-listMenu-horizontalBox li.static>.ms-core-listMenu-item{
+    position: relative;
+    z-index: 2;
+}
+header #top__navigation .ms-core-listMenu-horizontalBox li.static>.ms-core-listMenu-item {
+    position: relative;
+    z-index: 2;
+}
+header #top__navigation--primary .top__navigation--primary--open {
+    position: relative;
+    z-index: 2;
+}
+li.static.dynamic-children button {
+    background-color: transparent;
+    border: 0;
+    height: 25px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
 .container.theme-0 .event-detail-content {
     margin: 40px 0;
     padding: 0 37px

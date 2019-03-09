@@ -1483,7 +1483,9 @@ header #top__navigation {
 
 header #top__navigation .ms-core-listMenu-horizontalBox li.static>.ms-core-listMenu-item {
     border: 0;
-    margin-right: 0
+    margin-right: 0;
+    position: relative;
+    z-index: 2;
 }
 
 header #top__navigation--secondary {
@@ -1551,7 +1553,19 @@ header #top__navigation--primary ul li {
     color: #fff;
     font-weight: 300;
     margin: 0 12px;
-    padding: 2px 0 5px
+    padding: 2px 0 5px;
+    position: relative;
+}
+li.static.dynamic-children button {
+    background-color: transparent;
+    border: 0;
+    height: 25px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 
 header #top__navigation--primary ul li span,
@@ -1636,7 +1650,9 @@ header #top__navigation--primary ul li ul li a {
 }
 
 header #top__navigation--primary .top__navigation--primary--open {
-    display: none
+    display: none;
+    position: relative;
+    z-index: 2;
 }
 
 header #top__user {
