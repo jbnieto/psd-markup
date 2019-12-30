@@ -1,0 +1,2631 @@
+@font-face {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../libs/bootstrap/fonts/icomoon.eot?-q4dwzy');
+	src: url('../libs/bootstrap/fonts/icomoon.eot?#iefix-q4dwzy') format('embedded-opentype'), url('../libs/bootstrap/fonts/icomoon.woff?-q4dwzy') format('woff'), url('../libs/bootstrap/fonts/icomoon.ttf?-q4dwzy') format('truetype'), url('../libs/bootstrap/fonts/icomoon.svg?-q4dwzy#icomoon') format('svg')
+}
+
+* {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit
+}
+
+body,
+html {
+	font-size: 14px
+}
+
+body h1,
+html h1,
+body h2,
+html h2,
+body h3,
+html h3,
+body h4,
+html h4,
+body h5,
+html h5,
+body h6,
+html h6 {
+	font-family: 'Lato', sans-serif
+}
+
+.font-icon {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.central-title {
+	text-align: center !important
+}
+
+.banner .carousel {
+	background-color: #000
+}
+
+.carousel-fade .carousel-inner .item {
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+	-webkit-transition: opacity .5s !important;
+	-moz-transition: opacity .5s !important;
+	transition: opacity .5s !important
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	opacity: 0 !important
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1 !important
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0 !important;
+	-webkit-transform: translate3d(0, 0, 0) !important;
+	transform: translate3d(0, 0, 0) !important
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+	font-size: 44px;
+	width: 10%;
+	text-indent: -10000px
+}
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+	background-color: #222;
+	background-size: cover;
+	background-position: center;
+	height: 360px
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+	font-size: 44px;
+	line-height: 360px;
+	color: white
+}
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+	background-color: #222;
+	background-size: cover;
+	background-position: bottom center
+}
+
+.carousel img {
+	height: 100% !important
+}
+
+.banner .carousel,
+.banner .carousel-inner,
+.banner .carousel-inner .item {
+	height: 100% !important
+}
+
+.banner .carousel-fade .carousel-control {
+	line-height: 480px
+}
+
+.banner .carousel {
+	width: 100%;
+	background-color: #a7b5be;
+	top: 0px;
+	z-index: 2;
+	position: absolute !important
+}
+
+#Result>h2 {
+	padding: 0 0 0.5em !important
+}
+
+#s4-workspace {
+	float: left !important;
+	height: auto !important;
+	overflow: auto;
+	position: relative;
+	width: 100%;
+	z-index: 1
+}
+
+.arrow-down {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f107"
+}
+
+.ui-datepicker-prev {
+	cursor: pointer;
+	margin: 0 0.6em
+}
+
+.ui-datepicker-prev span {
+	display: none
+}
+
+.ui-datepicker-prev:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f105";
+	font-size: 1.2em
+}
+
+.ui-datepicker-next {
+	cursor: pointer;
+	margin: 0 0.6em
+}
+
+.ui-datepicker-next span {
+	display: none
+}
+
+.ui-datepicker-next:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f104";
+	font-size: 1.2em
+}
+
+.ui-helper-clearfix::before,
+.ui-helper-clearfix::after {
+	border-collapse: collapse;
+	content: "";
+	display: table
+}
+
+.ui-helper-clearfix::after {
+	clear: both
+}
+
+.ui-datepicker .ui-datepicker-header {
+	padding: 0.2em 0;
+	position: relative
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	background-image: none;
+	opacity: 0.35
+}
+
+.ui-datepicker td {
+	border: 0 none;
+	padding: 1px
+}
+
+.ui-state-disabled {
+	cursor: default !important
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #d3d3d3;
+	color: #555;
+	font-weight: normal
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: 0.2em;
+	text-align: right;
+	text-decoration: none
+}
+
+.icon {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.icon span {
+	display: none
+}
+
+.icon.share2:before {
+	content: "\e90d"
+}
+
+.icon.search:before {
+	content: "\f002"
+}
+
+.icon.facebook:before {
+	content: "\f09a"
+}
+
+.icon.facebook:hover {
+	background-color: #3b5998 !important
+}
+
+.icon.instagram:before {
+	content: "\f16d"
+}
+
+.icon.instagram:hover {
+	background-color: #3f729b !important
+}
+
+.icon.twitter:before {
+	content: "\f099"
+}
+
+.icon.twitter:hover {
+	background-color: #55acee !important
+}
+
+.icon.googleplus:before {
+	content: '\f0d5'
+}
+
+.icon.googleplus:hover {
+	background-color: #e93f2e !important
+}
+
+.icon.youtube3:before {
+	content: "\f167"
+}
+
+.icon.youtube3:hover {
+	background-color: #cd201f !important
+}
+
+.icon.pinterest:before {
+	content: "\f0d2"
+}
+
+.icon.pinterest:hover {
+	background-color: #cc2127 !important
+}
+
+.icon.linkedin2:before {
+	content: "\f0e1"
+}
+
+.icon.linkedin2:hover {
+	background-color: #0077b5 !important
+}
+
+.icon.arrow-right2:before {
+	content: "\e907"
+}
+
+.icon.arrow-up2:before {
+	content: "\e908"
+}
+
+.icon.flickr2:before {
+	content: "\f16e"
+}
+
+.icon.flickr2:hover {
+	background-color: #ff0084 !important
+}
+
+.icon.icon-chevron-down:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f107"
+}
+
+.icon.icon-phone:before {
+	content: "\f095"
+}
+
+.icon.icon-address:before {
+	content: "\e90a"
+}
+
+.icon.icon-envelop:before {
+	content: "\f003"
+}
+
+.icon.icon-location:before {
+	content: "\f041"
+}
+
+.icon.icon-compass:before {
+	content: "\e90b"
+}
+
+.icon.icon-calendar:before {
+	content: "\e90c"
+}
+
+.icon.icon-notes:before {
+	content: "\f02c"
+}
+
+.icon.icon-cross:before {
+	content: "\e900"
+}
+
+.icon.icon-chevron-with-circle-down:before {
+	content: "\e902"
+}
+
+.icon.icon-chevron-with-circle-up:before {
+	content: "\e901"
+}
+
+.icon.icon-chevron-thin-down:before {
+	content: "\e904"
+}
+
+.icon.icon-chevron-thin-up:before {
+	content: "\e903"
+}
+
+.icon-circled {
+	border: 1px solid #0f88bf;
+	border-radius: 1.3em;
+	overflow: hidden;
+	padding: 0
+}
+
+.icon-circled:before {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0.2em;
+	text-indent: 0
+}
+
+.sprite {
+	background-image: url(../images/presidio-sprite.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -10000px
+}
+
+.sprite.logo-presidio-top {
+	background-position: 0 -78px;
+	background-size: cover;
+	height: 32px;
+	margin-top: 0.1em;
+	width: 210px
+}
+
+.sprite.logo-presidio-trust-top {
+	background-position: -162px 0;
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	height: 29px;
+	margin: 0.2em 3em 0 2em;
+	width: 106px
+}
+
+.sprite.logo-presidio-trust-black {
+	background-position: 0 -57px;
+	height: 35px;
+	width: 240px
+}
+
+.sprite.logo-presidio-footer {
+	background-position: 0 -93px;
+	height: 35px;
+	width: 240px
+}
+
+.sprite.logo-presidio-trust-footer {
+	-moz-transition: background-color .2s ease-in, -ms-transform .2s ease-in;
+	-o-transition: background-color .2s ease-in, -o-transition .2s ease-in;
+	-webkit-transition: background-color .2s ease-in, -webkit-transform .2s ease-in;
+	transition: background-color .2s ease-in, transform .2s ease-in;
+	background-position: 0 0;
+	height: 56px;
+	width: 161px
+}
+
+.sprite.logo-presidio-trust-footer:hover {
+	background-color: #0091cf
+}
+
+.sprite.logo-0 {
+	background-position: 0 -130px;
+	height: 21px;
+	width: 21px
+}
+
+.sprite.logo-1 {
+	background-position: -22px -130px;
+	height: 20px;
+	width: 23px
+}
+
+.sprite.logo-2 {
+	background-position: -46px -129px;
+	height: 22px;
+	width: 18px
+}
+
+.sprite.logo-3 {
+	background-position: -65px -129px;
+	height: 22px;
+	width: 13px
+}
+
+.sprite.logo-4 {
+	background-position: -79px -130px;
+	height: 20px;
+	width: 24px
+}
+
+.sprite.pin-0 {
+	background-position: -121px -129px;
+	height: 24px;
+	width: 13px
+}
+
+.sprite.pin-1 {
+	background-position: -104px -129px;
+	height: 24px;
+	width: 13px
+}
+
+.sprite.pin-2 {
+	background-position: -135px -129px;
+	height: 24px;
+	width: 13px
+}
+
+.sprite.measure.length {
+	background-position: -602px -142px
+}
+
+.sprite.measure.challenge-level {
+	background-position: -602px -171px
+}
+
+.sprite.measure.use-type {
+	background-position: -602px -115px
+}
+
+.sprite.measure.estimated-time {
+	background-position: -602px -202px
+}
+
+.sprite.measure.inclination-grade {
+	background-position: -602px 8px
+}
+
+.sprite.measure.tread {
+	background-position: -602px -55px
+}
+
+.sprite.measure.cross-slope {
+	background-position: -602px -24px
+}
+
+.sprite.measure.surface-material {
+	background-position: -602px -85px
+}
+
+.text-shadow,
+.txt-shadow {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color=#000000)";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color=#000);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7)
+}
+
+.box-shadow {
+	transition: .2s box-shadow;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22)
+}
+
+.box-shadow:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.33)
+}
+
+.box-shadow-simple {
+	-webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+	border-radius: 1px
+}
+
+.box-shadow-none {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-ms-filter: none;
+	filter: none
+}
+
+.inner-shadow-banner {
+	-webkit-box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4) inset;
+	-moz-box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4) inset;
+	box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4) inset;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=0, Color=#000000)";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#000)
+}
+
+.shadow-menu {
+	-webkit-box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.5);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=124, Color=#000000)";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000)
+}
+
+.buttom-psd {
+	background-color: #0f88bf;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.28em;
+	margin: 1em 1em 0 0;
+	padding: 0.5em 1em
+}
+
+.buttom-psd:hover,
+.buttom-psd:focus,
+.buttom-psd:active {
+	background-color: #0f88bf;
+	color: #fff
+}
+
+.title-h2 {
+	color: #00733e;
+	font-family: 'Lato', sans-serif;
+	font-size: 2.6em;
+	font-weight: 300;
+	font-weight: 400;
+	padding: 1.8em 0 0.5em;
+	text-align: center;
+	text-align: center !important
+}
+
+.news-style-0 {
+	display: inline-block;
+	-ms-filter: none;
+	filter: none;
+	padding: 1.5em;
+	text-shadow: none;
+	width: 100%
+}
+
+.news-style-0 h3 {
+	font-size: 1em;
+	margin: 0
+}
+
+.news-style-0 h3 a {
+	color: #66828e;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+	text-transform: capitalize;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	display: -webkit-box !important;
+	overflow: hidden;
+	margin-bottom: 10px;
+	max-height: 67px
+}
+
+.news-style-0 span {
+	background-color: transparent;
+	border: none;
+	color: #000;
+	display: inline !important;
+	float: inherit;
+	font-size: 14px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	position: relative
+}
+
+.news-style-0 p {
+	display: -webkit-box !important;
+	overflow: hidden;
+	padding: 0;
+	margin: 14px 0 0;
+	max-height: 98px;
+	text-overflow: ellipsis;
+	width: 100%;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical
+}
+
+.aside {
+	display: inline-block;
+	float: left;
+	margin-bottom: 1em;
+	margin-top: 0;
+	width: 35%
+}
+
+.aside section {
+	display: inline-block;
+	margin: 15px 0 0;
+	padding: 0 0;
+	width: auto
+}
+
+.aside section.wide {
+	width: 100%
+}
+
+.aside section section {
+	box-shadow: none;
+	margin: 0;
+	padding: 0 15px 15px;
+	width: 100%
+}
+
+.aside section section h2 {
+	padding: 0
+}
+
+.aside section section.jobOpp img {
+	width: 100px;
+	margin: 0 20px 20px 0;
+	float: left
+}
+
+.aside section section.jobOpp a {
+	text-decoration: underline
+}
+
+.aside section section.jobOpp>span {
+	display: block
+}
+
+.aside section section.jobOpp p {
+	display: inline-block
+}
+
+.aside section .minimap-container .minimap-map {
+	width: 100% !important
+}
+
+.aside section div.minmap-directions ul {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+
+.aside section div.minmap-directions ul li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #666;
+	float: left;
+	margin: 1.5em 0;
+	width: 20%
+}
+
+.aside section div.minmap-directions ul li a {
+	display: block;
+	font-size: 14px;
+	margin: 0 auto;
+	outline: none;
+	text-decoration: underline
+}
+
+.aside section div.minmap-directions ul li:first-child {
+	border-left: none
+}
+
+.aside section div.minmap-directions ul li:last-child {
+	border-right: none
+}
+
+.aside section article {
+	border-top: 1px solid #eee;
+	padding: 1.5em 0;
+	width: 100%
+}
+
+.aside section article a {
+	color: #0098d8
+}
+
+.aside section article h4 {
+	font-weight: bold
+}
+
+.aside section article img {
+	float: left;
+	height: auto;
+	margin: 0 0.5em 0.5em 0;
+	width: auto
+}
+
+.aside section .psd-aside-paragraph h3 {
+	margin: 0.8em 0 0.4em 0;
+	padding: 0
+}
+
+.aside section h3 {
+	color: #000;
+	font-size: 24px;
+	margin: 0.8em 0;
+	text-align: left
+}
+
+.aside section h3 a {
+	color: #000;
+	text-decoration: underline
+}
+
+.aside section h3 a:hover {
+	text-decoration: underline
+}
+
+.aside section h4 {
+	display: inherit;
+	font-size: 2em;
+	padding: 1em 0 0.5em
+}
+
+.aside section iframe {
+	min-height: 410px !important
+}
+
+.aside section img {
+	width: 100%
+}
+
+.aside section .buttom-psd {
+	display: table;
+	float: inherit;
+	margin: 0 auto;
+	text-align: center
+}
+
+.transform-reset {
+	-moz-transform: rotate(0deg) scale(1, 1) skewX(0deg) skewY(0deg) translate(0, 0);
+	-ms-transform: rotate(0deg) scale(1, 1) skew(0deg, 0deg) translate(0, 0);
+	-o-transform: rotate(0deg) scale(1, 1) skew(0deg, 0deg) translate(0, 0);
+	-webkit-transform: rotate(0deg) scale(1, 1) skew(0deg, 0deg) translate(0, 0);
+	transform: rotate(0deg) scale(1, 1) skew(0deg, 0deg) translate(0, 0)
+}
+
+.transition-0 {
+	-moz-transition: background-color .2s ease-in, -ms-transform .2s ease-in;
+	-o-transition: background-color .2s ease-in, -o-transition .2s ease-in;
+	-webkit-transition: background-color .2s ease-in, -webkit-transform .2s ease-in;
+	transition: background-color .2s ease-in, transform .2s ease-in
+}
+
+.transition-1 {
+	-moz-transition: color .2s ease-in, -ms-transform .2s ease-in;
+	-o-transition: color .2s ease-in, -o-transition .2s ease-in;
+	-webkit-transition: color .2s ease-in, -webkit-transform .2s ease-in;
+	transition: color .2s ease-in, transform .2s ease-in
+}
+
+.transition-2 {
+	-moz-transition: opacity .2s ease-in;
+	-o-transition: opacity .2s ease-in;
+	-webkit-transition: opacity .2s ease-in;
+	transition: opacity .2s ease-in
+}
+
+.transition-5 {
+	-moz-transition: opacity 1s ease-in;
+	-o-transition: opacity 1s ease-in;
+	-webkit-transition: opacity 1s ease-in;
+	transition: opacity 1s ease-in
+}
+
+.animation-0 {
+	-moz-animation: toRightFromLeft 0.3s forwards;
+	-webkit-animation: toRightFromLeft 0.3s forwards;
+	animation: toRightFromLeft 0.3s forwards
+}
+
+@-webkit-keyframes toRightFromLeft {
+	49% {
+		-webkit-transform: translate(100%)
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translate(-100%)
+	}
+	51% {
+		opacity: 1
+	}
+}
+
+@-moz-keyframes toRightFromLeft {
+	49% {
+		-moz-transform: translate(100%)
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translate(-100%)
+	}
+	51% {
+		opacity: 1
+	}
+}
+
+@keyframes toRightFromLeft {
+	49% {
+		transform: translate(100%)
+	}
+	50% {
+		opacity: 0;
+		transform: translate(-100%)
+	}
+	51% {
+		opacity: 1
+	}
+}
+
+@keyframes slideLeftRight {
+	from {
+		left: -80%
+	}
+	to {
+		left: 0%
+	}
+}
+
+@keyframes slideRightLeft {
+	from {
+		left: 0%
+	}
+	to {
+		left: -80%
+	}
+}
+
+.load-spinner {
+	background-color: grey;
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: .8;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999
+}
+
+.load-spinner .spinner-content {
+	color: #fff;
+	display: block;
+	left: 50%;
+	margin-left: -32px;
+	margin-top: -32px;
+	position: absolute;
+	text-align: center;
+	top: 50%
+}
+
+.ui-state-active {
+	background-color: #0f88bf !important;
+	border-color: #0f88bf !important;
+	color: #fff !important
+}
+
+h3.ms-standardheader {
+	font-size: 1em !important
+}
+
+.ms-formbody label {
+	font-weight: normal !important
+}
+
+.ms-h3 {
+	font-size: 1.15em !important
+}
+
+.ms-textSmall,
+.ms-textXSmall,
+.ms-metadata,
+.ms-descriptiontext,
+.ms-secondaryCommandLink {
+	font-size: 0.9em !important
+}
+
+.cf-geolocation-map {
+	height: 500px !important;
+	margin: 0px;
+	padding: 0px;
+	width: 800px !important
+}
+
+.cf-geolocation-search {
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Roboto;
+	font-size: 1.07em;
+	font-weight: 300;
+	height: 32px;
+	margin-left: 12px;
+	margin-top: 16px;
+	outline: none;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 500px !important
+}
+
+.cf-geolocation-search:focus {
+	border-color: #4d90fe
+}
+
+.mainmap-map {
+	width: 800px;
+	height: 600px
+}
+
+.mainmap-map .mainmap-countlabel {
+	background: #000;
+	border-radius: 20px;
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	min-height: 20px;
+	min-width: 20px;
+	position: relative;
+	right: -7px;
+	text-align: center;
+	top: -49px
+}
+
+.mainmap-map .mainmap-countlabel.icon-1-count {
+	right: -4px;
+	top: -42px
+}
+
+.ui-widget-calendar {
+	color: #777;
+	font-family: 'Lato', sans-serif
+}
+
+.ui-widget-calendar.ui-datepicker {
+	width: auto
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content {
+	background-color: #fff;
+	border: none;
+	transition: .2s box-shadow;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	padding: 0
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.33)
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-widget-header {
+	background-color: transparent;
+	border: none;
+	padding: 0.5em 0 0.8em;
+	text-align: center
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-widget-header a {
+	color: #0091cf
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-widget-header a.ui-state-hover {
+	background-color: transparent;
+	border: none
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-widget-header .ui-datepicker-next {
+	float: right;
+	margin-top: 0;
+	right: 2px;
+	text-decoration: none;
+	top: 12px
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-widget-header .ui-datepicker-prev {
+	float: left;
+	left: 2px;
+	margin-top: 0;
+	text-decoration: none;
+	top: 12px
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-widget-header .ui-datepicker-title {
+	color: #777;
+	font-size: 1em;
+	font-weight: 500
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar {
+	width: 100%
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar thead tr th {
+	color: #0091cf;
+	font-weight: lighter;
+	text-align: center
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td {
+	padding: 0
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td.ui-datepicker-today a.ui-state-highlight.ui-state-active {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td.ui-datepicker-today a.ui-state-highlight.ui-state-active:hover {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td.ui-datepicker-unselectable.ui-state-disabled .ui-state-default {
+	background-color: transparent;
+	border: none;
+	font-size: 0.78em;
+	text-align: center
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td span {
+	padding: 1.2em
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td a:hover {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td a.ui-state-default {
+	background-color: transparent;
+	color: #777
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td a.ui-state-default:hover {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr:last-child {
+	border-bottom: none
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar a {
+	background-color: transparent;
+	border: none;
+	color: #777;
+	display: block;
+	font-size: 0.78em;
+	margin: 0;
+	padding: 1.2em;
+	text-align: center
+}
+
+.ui-widget-calendar.ui-datepicker.ui-widget-content .ui-datepicker-calendar a:hover {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.ui-widget {
+	color: #777;
+	font-family: 'Lato', sans-serif
+}
+
+.ui-widget.ui-datepicker {
+	width: auto
+}
+
+.ui-widget.ui-datepicker.ui-widget-content {
+	background-color: #fff;
+	border: none;
+	transition: .2s box-shadow;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	padding: 0
+}
+
+.ui-widget.ui-datepicker.ui-widget-content:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.33)
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-widget-header {
+	background-color: transparent;
+	border: none;
+	padding: 0.5em 0 0.8em;
+	text-align: center
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-widget-header a {
+	color: #0091cf
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-widget-header a.ui-state-hover {
+	background-color: transparent;
+	border: none
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-widget-header .ui-datepicker-next {
+	float: right;
+	margin-top: 0;
+	right: 2px;
+	text-decoration: none;
+	top: 12px
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-widget-header .ui-datepicker-prev {
+	float: left;
+	left: 2px;
+	margin-top: 0;
+	text-decoration: none;
+	top: 12px
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-widget-header .ui-datepicker-title {
+	color: #777;
+	font-size: 1em;
+	font-weight: 500
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar {
+	width: 100%
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar thead tr th {
+	color: #0091cf;
+	font-weight: lighter;
+	text-align: center
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td {
+	padding: 0
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td.ui-datepicker-today a.ui-state-highlight.ui-state-active {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td.ui-datepicker-today a.ui-state-highlight.ui-state-active:hover {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td.ui-datepicker-unselectable.ui-state-disabled .ui-state-default {
+	background-color: transparent;
+	border: none;
+	font-size: 0.78em;
+	text-align: center
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td span {
+	padding: 1.2em
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td a:hover {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td a.ui-state-default {
+	background-color: transparent;
+	color: #777
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr td a.ui-state-default:hover {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar tbody tr:last-child {
+	border-bottom: none
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar a {
+	background-color: transparent;
+	border: none;
+	color: #777;
+	display: block;
+	font-size: 0.78em;
+	margin: 0;
+	padding: 1.2em;
+	text-align: center
+}
+
+.ui-widget.ui-datepicker.ui-widget-content .ui-datepicker-calendar a:hover {
+	background-color: #0091cf;
+	color: #fff
+}
+
+.background-header {
+	background-color: #d2dbd6 !important
+}
+
+.background-header h2 {
+	color: #00733e !important
+}
+
+.background-bottom {
+	background-color: #e4eae8 !important
+}
+
+.background-bottom.related-item-list {
+	background-color: #e4eae8 !important
+}
+
+.background-bottom h2 {
+	color: #00733e !important
+}
+
+.background-transparent {
+	background-color: transparent !important
+}
+
+.text-ellipsis {
+	text-overflow: ellipsis !important;
+	-webkit-box-orient: vertical !important
+}
+
+.ms-SPZoneLabel {
+	height: auto !important
+}
+
+.ms-SPZone {
+	height: auto !important;
+	display: table !important
+}
+
+.ms-summaryLinksToolbar img {
+	width: auto !important
+}
+
+.ms-taxonomy-browser-button {
+	width: initial !important
+}
+
+.searching-results {
+	display: inline-block;
+	width: 100%
+}
+
+.searching-results .ms-ref-ctrl#Refinement {
+	background-color: transparent !important;
+	height: auto !important;
+	overflow: visible !important;
+	padding: 0 !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner {
+	display: inline-block !important;
+	float: left;
+	height: auto !important;
+	max-height: 36px !important;
+	margin: 0 !important;
+	overflow: hidden;
+	padding: 0 !important;
+	width: 100%
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open {
+	background-color: #f0f2f1 !important;
+	border: 1px solid #ccc;
+	height: auto !important;
+	max-height: initial !important;
+	overflow: visible
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open .ms-ref-refinername {
+	background-color: #f0f2f1 !important;
+	border: none !important;
+	color: #444 !important;
+	font-weight: bold
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open .ms-ref-allSec {
+	display: block !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open .ms-ref-selSec {
+	background-color: transparent !important;
+	border-top: none !important;
+	display: inline-block !important;
+	float: left !important;
+	min-height: inherit !important;
+	padding: 0 !important;
+	position: relative !important;
+	top: 0 !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open .ms-ref-selSec div {
+	padding: 0
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open .ms-ref-selSec div a {
+	margin: 5px !important;
+	padding: 3px !important;
+	display: block !important;
+	width: initial !important;
+	background-color: transparent !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open .ms-ref-selSec div a:hover {
+	color: #0072c6 !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open .ms-ref-selSec div a:hover .ms-ref-name {
+	color: #0072c6 !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open .ms-ref-unselSec {
+	background-color: transparent !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner.open .ms-ref-unsel-shortList {
+	background-color: #f0f2f1 !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner .ms-ref-allSec {
+	background-color: transparent
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner .ms-ref-allSec a {
+	margin: 5px !important;
+	padding: 3px !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner #Value {
+	width: 100% !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner .ms-ref-refinername {
+	width: 100% !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner .ms-ref-unsel-shortList {
+	background-color: #d3dbd7 !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner #Container .ms-ref-unselSec {
+	min-height: inherit !important;
+	border-top: none !important;
+	padding: 0 !important;
+	position: relative !important;
+	top: 0 !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner #Container .ms-ref-unselSec .ms-ref-unsel-shortList {
+	float: left
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner #Container .ms-ref-unselSec a {
+	margin: 5px !important;
+	padding: 3px !important;
+	width: calc(100% - 10px) !important;
+	background-color: transparent !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner #Container .ms-ref-unselSec a:hover {
+	color: #000 !important
+}
+
+.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner #Container .ms-ref-unselSec a:hover .ms-ref-name {
+	color: #000 !important
+}
+
+.searching-results .main-content-search-options {
+	width: 100%
+}
+
+.searching-results .main-content-search-options .ms-srch-item {
+	position: relative;
+	border-left: 4px solid #2b80c7
+}
+
+.searching-results .main-content-search-options .accordion {
+	float: left;
+	margin: 0 0 30px;
+	width: 100%
+}
+
+.searching-results .main-content-search-options .accordion .accordion-content {
+	background-color: #fff !important;
+	border: 1px solid #2b80c7;
+	float: left;
+	padding: 15px;
+	width: 100%
+}
+
+.searching-results .main-content-search-options .accordion .accordion-content .ms-srch-result-groups {
+	margin-bottom: 15px
+}
+
+.searching-results .main-content-search-options .accordion .accordion-content #Paging {
+	margin: 0 auto
+}
+
+.searching-results .main-content-search-options .ui-accordion h3 {
+	cursor: pointer;
+	outline: none
+}
+
+.searching-results .main-content-search-options .ui-accordion h3:focus {
+	outline: none
+}
+
+.searching-results .main-content-search-options .ui-accordion h3.ui-state-default {
+	border: none;
+	background-color: #2b80c7 !important;
+	color: #fff !important;
+	padding: 7px;
+	font-size: 18px !important
+}
+
+.searching-results .main-content-search-options .ui-accordion h3.ui-state-default:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\e904";
+	float: right
+}
+
+.searching-results .main-content-search-options .ui-accordion h3.ui-state-default.ui-state-active {
+	color: #fff !important
+}
+
+.searching-results .main-content-search-options .ui-accordion h3.ui-state-default.ui-state-active:before {
+	content: "\e903"
+}
+
+.searching-results .main-content-search {
+	float: left;
+	width: 100%
+}
+
+.searching-results .main-content-search .main-content-search-results {
+	width: 100%
+}
+
+.searching-results .main-content-search .main-content-search-results .ms-srch-result-groups {
+	margin-bottom: 0
+}
+
+.searching-results .main-content-search .main-content-search-results .tabPanel {
+	background-color: #d3dbd7 !important;
+	display: none;
+	float: left;
+	padding: 15px;
+	width: 100%
+}
+
+.searching-results .main-content-search .main-content-search-results .tabPanel:first-of-type {
+	display: block
+}
+
+.searching-results .main-content-search .main-content-search-results .tabPanel .sidebar-search {
+	float: left;
+	padding-right: 20px;
+	width: 25%
+}
+
+.searching-results .main-content-search .main-content-search-results .tabPanel .sidebar-search>span {
+	display: inline-block;
+	font-weight: bold;
+	margin: 8px
+}
+
+.searching-results .main-content-search .main-content-search-results .tabPanel .search-list-tab-results {
+	float: left;
+	width: 75%
+}
+
+.searching-results .main-content-search .main-content-search-results .tabPanel .search-list-tab-results.wide {
+	width: 100%
+}
+
+.searching-results .main-content-search .main-content-search-results .navTabsContent {
+	border-bottom: 2px solid #f0f2f7 !important;
+	background-color: #d3dbd7 !important;
+	display: table;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-left: 0;
+	width: 100%
+}
+
+.searching-results .main-content-search .main-content-search-results .navTabsContent li {
+	border: 0;
+	display: table-cell;
+	float: inherit;
+	text-align: center
+}
+
+.searching-results .main-content-search .main-content-search-results .navTabsContent li a {
+	color: #444 !important;
+	display: block !important;
+	padding: 5px
+}
+
+.searching-results .main-content-search .main-content-search-results .navTabsContent li.ui-state-active {
+	background-color: #66868e !important;
+	position: relative
+}
+
+.searching-results .main-content-search .main-content-search-results .navTabsContent li.ui-state-active:before {
+	content: "\025BE";
+	color: #66868e;
+	font-size: 24px;
+	height: 0;
+	left: 0;
+	line-height: 0px;
+	margin: 0;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	width: 100%
+}
+
+.searching-results .main-content-search .main-content-search-results .navTabsContent li.ui-state-active a {
+	color: #fff !important
+}
+
+@media screen and (max-width:768px) {
+	.searching-results .sidebar-search {
+		padding: 0 0 20px;
+		width: 100%
+	}
+	.searching-results .main-content-search {
+		width: 100%
+	}
+	.searching-results .main-content-search .main-content-search-results .ui-tabs-panel .search-list-tab-results,
+	.searching-results .main-content-search .main-content-search-results .ui-tabs-panel .sidebar-search {
+		padding: 0 0 15px;
+		width: 100%
+	}
+	.searching-results .ms-ref-ctrl#Refinement .ms-ref-refiner #Container .ms-ref-unselSec .ms-ref-unsel-shortList {
+		height: auto !important;
+		overflow-y: auto !important
+	}
+}
+
+@media screen and (max-width:420px) {
+	.searching-results .main-content-search .main-content-search-results .navTabsContent {
+		display: inline-block
+	}
+	.searching-results .main-content-search .main-content-search-results .navTabsContent li {
+		display: inline-block
+	}
+}
+
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field p,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field span,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field div,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field ul,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field li {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 1.6
+}
+
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field a {
+	color: #00733e;
+	font-weight: bold
+}
+
+p.ms-rteElement-P,
+.ms-rteElement-P {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 20px
+}
+
+h1.ms-rteElement-H1,
+.ms-rteElement-H1 {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	margin: 20px 0 10px;
+	padding: 0;
+	text-align: center
+}
+
+h2.ms-rteElement-H2,
+.ms-rteElement-H2 {
+	color: #00733e;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 20px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+h3.ms-rteElement-H3,
+.ms-rteElement-H3 {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 20px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+h4.ms-rteElement-H4,
+.ms-rteElement-H4 {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	font-style: italic;
+	margin: 14px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+h1.ms-rteElement-H1B,
+.ms-rteElement-H1B {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-weight: lighter;
+	font-size: 22px;
+	margin: 20px 0 10px;
+	padding: 0;
+	text-align: center
+}
+
+h2.ms-rteElement-H2B,
+.ms-rteElement-H2B {
+	color: #00733e;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 20px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+h3.ms-rteElement-H3B,
+.ms-rteElement-H3B {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 14px 0;
+	padding: 0;
+	text-align: left
+}
+
+h4.ms-rteElement-H4B,
+.ms-rteElement-H4B {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	font-style: italic;
+	margin: 20px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+.ms-rteStyle-Normal {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.6
+}
+
+.ms-rteStyle-Quote {
+	font-family: 'Lato', sans-serif;
+	font-style: italic
+}
+
+.ms-rteStyle-IntenseQuote {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none
+}
+
+.ms-rteStyle-Emphasis {
+	color: #0072c6;
+	font-family: 'Lato', sans-serif;
+	font-style: italic
+}
+
+.ms-rteStyle-IntenseEmphasis {
+	color: #0072c6;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	text-decoration: none
+}
+
+.ms-rteStyle-References {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-style: normal
+}
+
+.ms-rteStyle-IntenseReferences {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	text-decoration: none
+}
+
+.ms-rteStyle-Accent1 {
+	color: #666;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold
+}
+
+.ms-rteStyle-Accent2 {
+	color: #0072c6;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold
+}
+
+#s4-bodyContainer .ms-rtestate-write.ms-rtestate-field p,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field p {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 20px
+}
+
+#s4-bodyContainer .ms-rtestate-write.ms-rtestate-field h1,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field h1 {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	margin: 20px 0 10px;
+	padding: 0;
+	text-align: center
+}
+
+#s4-bodyContainer .ms-rtestate-write.ms-rtestate-field h2,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field h2 {
+	color: #00733e;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 20px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+#s4-bodyContainer .ms-rtestate-write.ms-rtestate-field h3,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field h3 {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 20px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+#s4-bodyContainer .ms-rtestate-write.ms-rtestate-field h4,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field h4 {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	font-style: italic;
+	margin: 14px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+#s4-bodyContainer .ms-rtestate-write.ms-rtestate-field h1.ms-rteElement-H1B,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field h1.ms-rteElement-H1B {
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-weight: lighter;
+	font-size: 22px;
+	margin: 20px 0 10px;
+	padding: 0;
+	text-align: center
+}
+
+#s4-bodyContainer .ms-rtestate-write.ms-rtestate-field h2.ms-rteElement-H2B,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field h2.ms-rteElement-H2B {
+	color: #00733e;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 20px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+#s4-bodyContainer .ms-rtestate-write.ms-rtestate-field h3.ms-rteElement-H3B,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field h3.ms-rteElement-H3B {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 14px 0;
+	padding: 0;
+	text-align: left
+}
+
+#s4-bodyContainer .ms-rtestate-write.ms-rtestate-field h4.ms-rteElement-H4B,
+#s4-bodyContainer .container-fluid .container .event-detail-content .ms-rtestate-field h4.ms-rteElement-H4B {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	font-style: italic;
+	margin: 20px 0 5px;
+	padding: 0;
+	text-align: left
+}
+
+#s4-bodyContainer {
+	background-color: #d3dbd7 !important
+}
+
+#s4-bodyContainer .app-container {
+	min-height: auto !important
+}
+
+#s4-bodyContainer .ms-srch-result.large-events .container-items .ms-srch-group-content {
+	padding: 0 !important
+}
+
+.container #main-zone.filter-content .ms-srch-result.large-events .container-items .ms-srch-group-content {
+    display: block;
+}
+
+#s4-bodyContainer .app-container .ms-webpart-chrome.ms-webpart-chrome-vertical.ms-webpart-chrome-fullWidth .refinementFiltersRemove {
+	margin-bottom: 0 !important;
+	padding: 10px 14px 0 !important
+}
+
+#s4-bodyContainer .app-container .ms-webpart-chrome.ms-webpart-chrome-vertical.ms-webpart-chrome-fullWidth .refinementFiltersRemove .results {
+	display: block !important
+}
+
+#s4-bodyContainer .app-container .ms-webpart-chrome.ms-webpart-chrome-vertical.ms-webpart-chrome-fullWidth .refinementFiltersRemove .results .filterMultiOption.selected {
+	margin: 0 10px 5px 0 !important
+}
+
+#s4-bodyContainer .ms-srch-result:first-child .ms-srch-group .ms-srch-group-content .ms-srch-item {
+	background-color: transparent
+}
+
+#s4-workspace {
+	overflow: inherit !important
+}
+
+#s4-workspace .app-container {
+	float: left !important;
+	padding-top: 0 !important;
+	width: 100% !important;
+}
+
+#go-top {
+	display: none !important
+}
+
+.maps-tabs-content {
+	height: 100% !important;
+	overflow-y: scroll !important;
+	position: absolute !important;
+	width: 100% !important
+}
+
+.maps-tabs-content::-webkit-scrollbar {
+	width: 15px
+}
+
+.maps-tabs-content::-webkit-scrollbar-track {
+	background-color: #eaeaea;
+	border-left: 1px solid #ccc
+}
+
+.maps-tabs-content::-webkit-scrollbar-thumb {
+	background-color: #ccc
+}
+
+.maps-tabs-content .ms-srch-resultFooter {
+	display: none
+}
+
+.maps-tabs-content .s4-wpcell-plain:first-child {
+	border-bottom: 0
+}
+
+.maps-tabs-content .s4-wpcell-plain:last-child {
+	border-bottom: 0
+}
+
+.maps-tabs-content .paginationFilterCalendar:first-child {
+	display: none
+}
+
+.maps-tabs-content .paginationFilterCalendar:first-child#Paging {
+	display: inline
+}
+
+.maps-tabs-content .ms-srch-resultFooter .paginationFilterCalendar:first-child {
+	display: inline
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after {
+	content: ' ';
+	background-image: url(../images/presidio-sprite.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -10000px;
+	margin: -3px 0 0 10px;
+	position: absolute
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-top,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-top,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-top,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-top,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-top {
+	background-position: 0 -78px;
+	background-size: cover;
+	height: 32px;
+	margin-top: 0.1em;
+	width: 210px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-top,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-top,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-top,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-top,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-top {
+	background-position: -162px 0;
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	height: 29px;
+	margin: 0.2em 3em 0 2em;
+	width: 106px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-black,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-black,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-black,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-black,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-black {
+	background-position: 0 -57px;
+	height: 35px;
+	width: 240px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-footer,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-footer,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-footer,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-footer,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-footer {
+	background-position: 0 -93px;
+	height: 35px;
+	width: 240px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer {
+	-moz-transition: background-color .2s ease-in, -ms-transform .2s ease-in;
+	-o-transition: background-color .2s ease-in, -o-transition .2s ease-in;
+	-webkit-transition: background-color .2s ease-in, -webkit-transform .2s ease-in;
+	transition: background-color .2s ease-in, transform .2s ease-in;
+	background-position: 0 0;
+	height: 56px;
+	width: 161px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer:hover,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer:hover,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer:hover,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer:hover,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-presidio-trust-footer:hover {
+	background-color: #0091cf
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-0,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-0,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-0,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-0,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-0 {
+	background-position: 0 -130px;
+	height: 21px;
+	width: 21px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-1,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-1,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-1,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-1,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-1 {
+	background-position: -22px -130px;
+	height: 20px;
+	width: 23px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-2,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-2,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-2,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-2,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-2 {
+	background-position: -46px -129px;
+	height: 22px;
+	width: 18px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-3,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-3,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-3,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-3,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-3 {
+	background-position: -65px -129px;
+	height: 22px;
+	width: 13px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-4,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-4,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-4,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-4,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.logo-4 {
+	background-position: -79px -130px;
+	height: 20px;
+	width: 24px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-0,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-0,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-0,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-0,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-0 {
+	background-position: -121px -129px;
+	height: 24px;
+	width: 13px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-1,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-1,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-1,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-1,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-1 {
+	background-position: -104px -129px;
+	height: 24px;
+	width: 13px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-2,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-2,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-2,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-2,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.pin-2 {
+	background-position: -135px -129px;
+	height: 24px;
+	width: 13px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.length,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.length,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.length,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.length,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.length {
+	background-position: -602px -142px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.challenge-level,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.challenge-level,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.challenge-level,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.challenge-level,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.challenge-level {
+	background-position: -602px -171px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.use-type,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.use-type,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.use-type,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.use-type,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.use-type {
+	background-position: -602px -115px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.estimated-time,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.estimated-time,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.estimated-time,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.estimated-time,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.estimated-time {
+	background-position: -602px -202px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.inclination-grade,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.inclination-grade,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.inclination-grade,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.inclination-grade,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.inclination-grade {
+	background-position: -602px 8px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.tread,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.tread,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.tread,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.tread,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.tread {
+	background-position: -602px -55px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.cross-slope,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.cross-slope,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.cross-slope,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.cross-slope,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.cross-slope {
+	background-position: -602px -24px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.surface-material,
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.surface-material,
+.maps-tabs-content span[title='Featured Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.surface-material,
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.surface-material,
+.maps-tabs-content span[title='More Events'] h2.ms-webpart-titleText:first-of-type span:first-child:after.measure.surface-material {
+	background-position: -602px -85px
+}
+
+.maps-tabs-content span[title='Featured Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after {
+	background-position: -121px -129px;
+	height: 24px;
+	width: 13px
+}
+
+.maps-tabs-content span[title='More Places'] h2.ms-webpart-titleText:first-of-type span:first-child:after {
+	background-position: -104px -129px;
+	height: 24px;
+	width: 13px
+}
+
+.maps-tabs-content span[title='Starting Points'] h2.ms-webpart-titleText:first-of-type span:first-child:after {
+	background-position: -135px -129px;
+	height: 24px;
+	width: 13px
+}
+
+.maps-tabs-content h2 {
+	color: #333 !important;
+	font-size: 18px !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	padding: 0px 15px 0px !important;
+	text-align: justify !important;
+	width: 100% !important
+}
+
+.maps-tabs-content h2 nobr {
+	float: left
+}
+
+.maps-tabs-content h3 {
+	color: #333 !important;
+	font-size: 18px !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	padding: 0px 15px 0px !important;
+	text-align: left !important
+}
+
+.maps-tabs-content .ms-srch-result .ms-srch-item {
+	float: left !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: auto !important;
+	box-shadow: none !important;
+	width: 100% !important;
+	display: inline-block !important
+}
+
+.maps-tabs-content .ms-srch-result .ms-srch-item:first-child {
+	border: none !important
+}
+
+.maps-tabs-content .ms-srch-result .ms-srch-item span {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: auto !important;
+	display: inline-block !important;
+	float: inherit !important;
+	overflow: initial !important
+}
+
+.maps-tabs-content .ms-srch-result .ms-srch-item p {
+	display: block !important;
+	float: inherit !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: auto !important
+}
+
+.maps-tabs-content .ms-srch-result #Paging {
+	margin: 10px 0 !important
+}
+
+.maps-tabs-content .ms-srch-result .ms-srch-resultFooter {
+	display: inline
+}
+
+.maps-tabs-content article {
+	background-color: #fff;
+	display: inline-block;
+	padding: 10px;
+	transition: .2s background;
+	width: calc(100% - 20px);
+	margin: 5px 10px;
+	transition: ease-in box-shadow .1s;
+	-webkit-transition: ease-in box-shadow .1s;
+	transition: .2s box-shadow;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22)
+}
+
+.maps-tabs-content article:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.33)
+}
+
+.maps-tabs-content article:hover {
+	cursor: pointer;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.33)
+}
+
+.maps-tabs-content article img {
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+	height: 70px;
+	width: 100px
+}
+
+.maps-tabs-content article h4 {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis !important;
+	-webkit-box-orient: vertical !important;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: 600;
+	color: #000;
+	max-height: 30px;
+	line-height: 15px !important
+}
+
+.maps-tabs-content article p {
+	color: #777 !important;
+	float: inherit !important;
+	margin-bottom: 0 !important;
+	width: auto !important;
+	font-size: 14px !important;
+	line-height: 14px !important;
+	height: 28px !important;
+	overflow: hidden
+}
+
+.maps-tabs-content article span {
+	font-size: 14px !important;
+	line-height: 14px !important;
+	color: #777 !important;
+	display: inline-block !important;
+	width: auto !important
+}
+
+.maps-tabs-content .ms-srch-group-content article:first-child {
+	border-top: none
+}
+
+.maps-tabs-content #Refinement {
+	z-index: 10 !important
+}
+
+.maps-tabs-content #Refinement.ms-ref-ctrl {
+	background: #1d904e !important
+}
+
+.maps-tabs-content #Refinement .labelRefinement {
+	color: #fff
+}
+
+.maps-tabs-content #Refinement .ms-ref-refiner .ms-ref-refinername {
+	background-color: #2e9f5b !important;
+	border: none !important;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.04) !important;
+	color: #fff !important;
+	transition: .2s all;
+	text-transform: uppercase
+}
+
+.maps-tabs-content #Refinement .ms-ref-refiner.open .ms-ref-refinername {
+	background-color: #e9f9ee !important;
+	box-shadow: 0 10px 23px 1px rgba(0, 0, 0, 0.04) !important;
+	color: black !important;
+	padding-bottom: 23px !important
+}
+
+.maps-tabs-content #Refinement.open {
+	height: 238px !important
+}
+
+.maps-tabs-content #Refinement.open .ms-ref-unsel-shortList {
+	height: 103px !important;
+	margin-bottom: 44px;
+	overflow-y: scroll
+}
+
+.maps-tabs-content #Refinement.open #SubmitValue {
+	position: absolute !important;
+	bottom: 10px !important;
+	right: 20px !important;
+	width: auto !important
+}
+
+.maps-tabs-content #Refinement .ms-ref-unselSec {
+	background-color: #e9f9ee !important;
+	border-bottom: none !important;
+	border-top: medium none !important;
+	top: 59px !important
+}
+
+.maps-tabs-content #Refinement .ms-ref-unselSec .filterMultiOption {
+	background-color: white !important;
+	border: 1px solid #d6e0e8 !important;
+	cursor: pointer !important;
+	padding: 3px 11px 3px 5px !important;
+	text-transform: capitalize !important;
+	transition: .2s all !important
+}
+
+.maps-tabs-content #Refinement .ms-ref-unselSec .filterMultiOption:hover label {
+	color: #666 !important
+}
+
+.maps-tabs-content #Refinement .ms-ref-unselSec .filterMultiOption:hover label span {
+	color: #666 !important
+}
+
+.maps-tabs-content #Refinement .ms-ref-unselSec .filterMultiOption label {
+	cursor: pointer !important;
+	font-weight: normal !important
+}
+
+.maps-tabs-content .refinementFiltersRemove {
+	padding: 0 !important
+}
+
+.maps-tabs-content .refinementFiltersRemove span {
+	display: none;
+	width: 100%
+}
+
+.maps-tabs-content .refinementFiltersRemove .filterMultiOption span {
+	display: inline !important;
+	width: auto !important
+}
+
+.maps-tabs-content .refinementFiltersRemove .results {
+	margin: 0 10px 0 0 !important
+}
+
+.expand-collapse-btn {
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	float: right;
+	line-height: 1.428571429;
+	padding: 3px 6px 3px 10px;
+	border-radius: 4px;
+	background-color: #f0f2f1;
+	border: 1px solid #ccc
+}
+
+.expand-collapse-btn:after {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\e903";
+	font-size: .7rem;
+	margin: 0 0 0 10px
+}
+
+.expand-collapse-btn.collapsed:after {
+	content: "\e903"
+}
+
+.expand-collapse-btn.expanded:after {
+	content: "\e904"
+}
+
+@media screen and (max-width:768px) {
+	#s4-bodyContainer {
+		padding-bottom: 0 !important
+	}
+	#s4-bodyContainer .ms-srch-result:first-child .ms-srch-result-groups {
+		padding: 0 !important
+	}
+	#s4-bodyContainer .ms-srch-result.large-events .container-items .ms-srch-group-content {
+		padding: 0 !important
+	}
+}
+
+/* Resizes to 0 the upper margin of the main area */
+
+.ms-pagetitleareaframe table {
+	background: none;
+}
+
+/* Hides the left navigation area (quick launch bar) */
+
+#s4-leftpanel-content {
+	display: none !important;
+}
+
+/* Resizes to 0 the left margin */
+
+.s4-ca {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+/* Hides title and breadcrumb bar */
+
+.s4-title {
+	display: none !important;
+}
+
+/* Hides the top navigation links */
+
+.s4-tn {
+	display: none !important;
+}
+
+/* Hides the top navigation container bar */
+
+.s4-notdlg {
+	display: none !important;
+}
+
+/* Hides the search box */
+
+#SRSB {
+	display: none !important;
+}
+
+/* Hides the help button */
+
+.s4-help {
+	visibility: hidden;
+}
+
+/* Hides user name in the top right corner and the related menu */
+
+.s4-trc-container-menu {
+	visibility: hidden;
+}
+
+/* Hides the ribbon */
+
+.ms-cui-ribbonTopBars {
+	display: none;
+}
+
+body #s4-ribbonrow {
+	min-height: 0 !important;
+	display: none !important;
+}
+
+#ms-designer-ribbon {
+	display: none !important;
+}
+
+/* Hides the banner */
+
+#top-navbar {
+	display: none !important;
+}
+
+/* Hides the footer */
+
+footer {
+	min-height: 0 !important;
+	display: none !important;
+}
+
+.container {
+	width: 100% !important;
+}
+
+#top {
+	display: none;
+}
+
+body,
+#s4-bodyContainer {
+	background-color: transparent !important;
+}
+
+header {
+	display: none !important;
+}

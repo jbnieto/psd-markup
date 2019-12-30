@@ -200,6 +200,12 @@
     z-index: 0;
 }
 
+@media screen and (max-width:769px) {
+    .app-container {
+        padding-top: 80px;
+    }
+}
+
 .app-container.mobileOpenMenu {
     margin-left: 80%;
     width: 100%
@@ -373,6 +379,12 @@
 
 .container-fluid.column-layout .container>main {
     width: 740px;
+}
+
+@media only screen and (max-width: 480px) and (max-aspect-ratio: 4/3), only screen and (max-width: 768px) and (min-aspect-ratio: 4/3) { 
+    .container-fluid.column-layout .container>main {
+        width: 100%;
+    }
 }
 
 .container-fluid.column-layout .container>aside {
@@ -581,7 +593,18 @@
     width: calc(100% - 760px);
     margin-top: 112px;
 }
-
+@media only screen and (max-width: 480px) and (max-aspect-ratio: 4/3), only screen and (max-width: 768px) and (min-aspect-ratio: 4/3) { 
+    .container-fluid>.container-fluid.column-layout>.container>aside {
+        width: 100%;
+    }
+    .content-detail-body .dfwp-column {
+        width: 100% !important;
+    }
+    #s4-bodyContainer .column-layout .container aside section h2 {
+        padding: 0;
+        margin: 0;
+    }
+}
 .list-item-inline {
     padding: 0 37px 50px
 }
@@ -5751,7 +5774,11 @@ header.mobile #top__menu-mobile span:nth-child(3) {
         margin: 0 4px
     }
     .home-banner--content__intro {
-        padding: 0 60px
+        padding: 0 60px;
+        padding-top: 90px;
+    }
+    .home-banner--content__intro--heading, .home-banner--content__intro>div>div>h1 {
+        line-height: 70px;
     }
     .main_landing .ms-webpartzone-cell:nth-of-type(6) .section-content .article-resume__info--title {
         display: block;
@@ -6393,10 +6420,14 @@ header.mobile #top__menu-mobile span:nth-child(3) {
     }
     .home-banner--content__intro--heading,
     .home-banner--content__intro>div>div>h1 {
-        font-size: 52px
+        font-size: 40px;
+        padding: 0 20px;
     }
     .home-banner--content__intro--link {
-        font-size: 20px
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+        width: 200px;
     }
     .main_landing .ms-webpartzone-cell h2 span:nth-child(1) {
         font-size: 40px;
@@ -18073,7 +18104,7 @@ header #top.mobile #top__navigation--secondary {
         font-size: 30px
     }
     .home-banner--content__intro {
-        padding: 0
+        padding: 90px 0 0;
     }
     .main_landing .ms-webpartzone-cell h2 span:nth-child(1),
     .main_landing .ms-webpartzone-cell:nth-of-type(1) h2 span:nth-child(1),
@@ -18172,12 +18203,6 @@ header #top.mobile #top__navigation--secondary {
 @media screen and (max-width: 560px) {
    #fortScott-home--message a {
       line-height: 25px;
-   }
-}
-
-@media screen and (max-width: 480px) {
-   .home-banner--content__intro--link {
-      margin: 30px 40px;
    }
 }
 
